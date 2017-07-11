@@ -1,0 +1,446 @@
+p120663vaps2366
+p120663vaps2367
+p120663vaps2377
+p120663vaps2478
+p120663vaps2479
+p120663vaps2480
+p120663vaps2481
+p120663vaps2482
+p120663vaps2483
+p120663vaps2484
+p120663vaps5051
+p120663vaps5081
+p120663vaps5082
+p120663vaps5091
+p120663vaps5092 
+
+
+
+Roll Back:
+
+1. Stop all the JVM's and nodes for the environment.
+2. Navigate to Backup directory of 32-bit:
+
+/nas-cq-auth/backup [p120663vaps5051]
+[wasadmin@p120663vaps5051 root]$ cd /nas-cq-auth/backup
+[wasadmin@p120663vaps5051 backup]$ ls -ltr
+total 108
+drwxrwxrwx 3 wasadmin wasgroup 4096 May 17 2016 wcs70_sitauth_backup_20160517050448
+drwxrwxrwx 3 wasadmin wasgroup 4096 May 17 2016 ws70_sitauth_backup_20160517050552
+drwxrwxrwx 4 cqadmin cqadmin 4096 May 17 2016 cq5
+drwxrwxrwx 3 wasadmin wasgroup 4096 Jun 10 2016 ws70_sitauth_backup_20160610124809
+drwxrwxrwx 3 wasadmin wasgroup 4096 Jun 10 2016 ws70_sitauth_backup_20160610125351
+drwxr-xr-x 3 wasadmin wasgroup 4096 Jun 10 2016 wcs70_sitauth_backup_20160610125400
+drwxr-xr-x 3 wasadmin wasgroup 4096 Jul 15 2016 ws70_sitauth_backup_20160715152812
+drwxr-xr-x 3 wasadmin wasgroup 4096 Jul 15 2016 wcs70_sitauth_backup_20160715153840
+drwxr-xr-x 3 wasadmin wasgroup 4096 Aug 23 2016 wcs70_sitauth_backup_20160823165316
+drwxr-xr-x 3 wasadmin wasgroup 4096 Aug 24 2016 ws70_sitauth_backup_20160824060330
+drwxr-xr-x 3 wasadmin wasgroup 4096 Nov 16 2016 wcs70_sitauth_backup_20161116144719
+drwxr-xr-x 3 wasadmin wasgroup 4096 Nov 16 2016 ws70_sitauth_backup_20161116144759
+drwxr-xr-x 3 wasadmin wasgroup 4096 Apr 5 07:37 ws70_sitauth_backup_20170405073737
+drwxr-xr-x 3 wasadmin wasgroup 4096 Apr 5 07:41 wcs70_sitauth_backup_20170405074150
+drwxr-xr-x 3 wasadmin wasgroup 4096 Apr 7 08:30 ws70_sitauth_backup_20170407083105
+drwxr-xr-x 3 wasadmin wasgroup 4096 Apr 7 08:34 wcs70_sitauth_backup_20170407083455
+drwxr-xr-x 3 wasadmin wasgroup 4096 Apr 11 07:30 wcs70_sitauth_backup_20170411073102
+drwxr-xr-x 3 wasadmin wasgroup 4096 Apr 11 07:30 ws70_sitauth_backup_20170411073115
+drwxr-xr-x 3 wasadmin wasgroup 4096 May 9 06:18 ws70_sitauth_backup_20170509062039
+drwxr-xr-x 3 wasadmin wasgroup 4096 May 9 06:23 wcs70_sitauth_backup_20170509062514
+drwxr-xr-x 3 wasadmin wasgroup 4096 Jun 22 16:03 wcs70_sitauth_backup_20170622160709
+drwxr-xr-x 3 wasadmin wasgroup 4096 Jun 22 16:04 ws70_sitauth_backup_20170622160834
+drwxr-xr-x 3 wasadmin wasgroup 4096 Jun 22 16:07 ws70_p120663vaps5091_backup_20170622161108
+drwxr-xr-x 3 wasadmin wasgroup 4096 Jun 22 16:07 ws70_p120663vaps5092_backup_20170622161109
+drwxr-xr-x 3 wasadmin wasgroup 4096 Jun 22 16:07 ws70_p120663vaps5081_backup_20170622161109
+drwxr-xr-x 3 wasadmin wasgroup 4096 Jun 22 16:07 ws70_p120663vaps5082_backup_20170622161109
+drwxr-xr-x 3 wasadmin wasgroup 4096 Jul 10 07:38 wcs70_sitauth_backup_20170710074253
+
+
+
+
+/nas-cq-pub/backup  [p120663vaps2478]
+[wasadmin@p120663vaps2478 backup]$ ls -ltr
+total 128
+drwxrwxrwx. 3 cqadmin cqadmin 4096 Jun 18 2015 cq5
+drwxrwxrwx. 3 wasadmin wasgroup 4096 May 17 2016 wcs70_sit_backup_20160517050449
+drwxrwxrwx. 3 wasadmin wasgroup 4096 May 17 2016 ws70_sit_backup_20160517050553
+drwxrwxrwx. 3 wasadmin wasgroup 4096 Jun 10 2016 ws70_sit_backup_20160610124812
+drwxrwxrwx. 3 wasadmin wasgroup 4096 Jun 10 2016 ws70_sit_backup_20160610125354
+drwxrwxrwx. 3 wasadmin wasgroup 4096 Jun 10 2016 wcs70_sit_backup_20160610125402
+drwxrwxrwx. 3 wasadmin wasgroup 4096 Jul 15 2016 ws70_sit_backup_20160715152719
+drwxrwxrwx. 3 wasadmin wasgroup 4096 Jul 15 2016 wcs70_sit_backup_20160715153747
+drwxrwxrwx. 3 wasadmin wasgroup 4096 Aug 23 2016 wcs70_sit_backup_20160823165316
+drwxrwxrwx. 3 wasadmin wasgroup 4096 Aug 24 2016 ws70_sit_backup_20160824060330
+drwxrwxrwx. 3 wasadmin wasgroup 4096 Nov 16 2016 wcs70_sit_backup_20161116144719
+drwxrwxrwx. 3 wasadmin wasgroup 4096 Nov 16 2016 ws70_sit_backup_20161116144759
+drwxr-xr-x. 3 wasadmin wasgroup 4096 Apr 5 07:37 ws70_sit_backup_20170405073737
+drwxr-xr-x. 3 wasadmin wasgroup 4096 Apr 5 07:41 wcs70_sit_backup_20170405074150
+drwxr-xr-x. 3 wasadmin wasgroup 4096 Apr 7 08:30 ws70_sit_backup_20170407083105
+drwxr-xr-x. 3 wasadmin wasgroup 4096 Apr 7 08:34 wcs70_sit_backup_20170407083454
+drwxr-xr-x. 3 wasadmin wasgroup 4096 Apr 11 07:30 wcs70_sit_backup_20170411073102
+drwxr-xr-x. 3 wasadmin wasgroup 4096 Apr 11 07:30 ws70_sit_backup_20170411073115
+drwxr-xr-x. 3 wasadmin wasgroup 4096 May 9 06:18 ws70_sit_backup_20170509062039
+drwxr-xr-x. 3 wasadmin wasgroup 4096 May 9 06:23 wcs70_sit_backup_20170509062514
+drwxr-xr-x. 3 wasadmin wasgroup 4096 Jun 22 16:03 wcs70_sit_backup_20170622160710
+drwxr-xr-x. 3 wasadmin wasgroup 4096 Jun 22 16:04 ws70_sit_backup_20170622160834
+drwxr-xr-x. 3 wasadmin wasgroup 4096 Jun 22 16:30 ws70_p120663vaps2367_backup_20170622163418
+drwxr-xr-x. 3 wasadmin wasgroup 4096 Jun 22 16:30 ws70_p120663vaps2482_backup_20170622163419
+drwxr-xr-x. 3 wasadmin wasgroup 4096 Jun 22 16:30 ws70_p120663vaps2481_backup_20170622163419
+drwxr-xr-x. 3 wasadmin wasgroup 4096 Jun 22 16:30 ws70_p120663vaps2479_backup_20170622163419
+drwxr-xr-x. 3 wasadmin wasgroup 4096 Jun 22 16:30 ws70_p120663vaps2480_backup_20170622163419
+drwxr-xr-x. 3 wasadmin wasgroup 4096 Jun 22 16:30 ws70_p120663vaps2366_backup_20170622163419
+drwxr-xr-x. 3 wasadmin wasgroup 4096 Jun 22 16:30 ws70_p120663vaps2483_backup_20170622163420
+drwxr-xr-x. 3 wasadmin wasgroup 4096 Jun 22 16:30 ws70_p120663vaps2484_backup_20170622163420
+drwxr-xr-x. 3 root root 4096 Jun 28 17:50 ws70_p120663vaps2377_backup_20170628
+drwxr-xr-x. 3 wasadmin wasgroup 4096 Jul 10 07:38 wcs70_sit_backup_20170710074254
+[wasadmin@p120663vaps2478 backup]$
+
+
+
+ll /nas-cq-pub/backup/ws70_p120663vaps2367_backup_20170622163418 
+in 2478
+
+
+ll /nas-cq-auth/backup/ws70_p120663vaps5091_backup_20170622161108 
+in 5051
+
+
+
+nohup cp -r /nas-cq-auth/backup/ws70_sitauth_backup_20170622160834/ws70/* /apps/IBM/Websphere/ws70 & 
+
+nohup cp -r /nas-cq-auth/backup/wcs70_sitauth_backup_20170622160709/wcs70/* /apps/IBM/Websphere/wcs70 &
+
+
+
+p120663vaps2377 
+connect this sever
+
+[wasadmin@p120663vaps2377 ~]$ cd /apps/backup/
+[wasadmin@p120663vaps2377 backup]$ ls -rlth
+total 8.0K
+drwxrwxrwx 2 wasadmin wasgroup 4.0K Jun 28 17:51 WASConfig
+drwxr-xr-x 3 wasadmin wasgroup 4.0K Jul 10 08:38 ws70_p120663vaps2377_backup_20170710083851
+[wasadmin@p120663vaps2377 backup]$ 
+
+[wasadmin@p120663vaps2377 backup]$ cd WASConfig/
+[wasadmin@p120663vaps2377 WASConfig]$ ls -rlth
+total 1.6M
+-rwxrwxrwx 1 wasadmin wasgroup 1.6M Jun 28 17:49 WAS_Node_p120663vaps2377Node_Backup_20170628.zip
+[wasadmin@p120663vaps2377 WASConfig]$
+
+cd /apps/IBM/Websphere/ws70 
+rm -rf *
+nohup cp -r /nas-cq-pub/backup/ws70_p120663vaps2377_backup_20170628/ws70/*  /apps/IBM/Websphere/ws70 & 
+
+
+cd /apps/IBM/Websphere/ws70 across all below servers and execute: rm -rf * 
+
+p120663vaps2366
+p120663vaps2367
+p120663vaps2478
+p120663vaps2479
+p120663vaps2480
+p120663vaps2481
+p120663vaps2482
+p120663vaps2483
+p120663vaps2484
+p120663vaps5051
+p120663vaps5081
+p120663vaps5082
+p120663vaps5091
+p120663vaps5092
+
+p120663vaps2367
+nohup cp -r /nas-cq-pub/backup/ws70_p120663vaps2367_backup_20170622163418/ws70/*  /apps/IBM/Websphere/ws70 &
+
+p120663vaps2482
+nohup cp -r /nas-cq-pub/backup/ws70_p120663vaps2482_backup_20170622163419/ws70/*  /apps/IBM/Websphere/ws70 &
+
+p120663vaps2481
+nohup cp -r /nas-cq-pub/backup/ws70_p120663vaps2481_backup_20170622163419/ws70/*  /apps/IBM/Websphere/ws70 &
+
+ws70_p120663vaps2479
+nohup cp -r /nas-cq-pub/backup/ws70_p120663vaps2479_backup_20170622163419/ws70/*  /apps/IBM/Websphere/ws70 &
+
+p120663vaps2480
+nohup cp -r /nas-cq-pub/backup/ws70_p120663vaps2480_backup_20170622163419/ws70/*  /apps/IBM/Websphere/ws70 &
+
+p120663vaps2366
+nohup cp -r /nas-cq-pub/backup/ws70_p120663vaps2366_backup_20170622163419/ws70/*  /apps/IBM/Websphere/ws70 &
+
+p120663vaps2483
+nohup cp -r /nas-cq-pub/backup/ws70_p120663vaps2483_backup_20170622163420/ws70/*  /apps/IBM/Websphere/ws70 &
+
+p120663vaps2484
+nohup cp -r /nas-cq-pub/backup/ws70_p120663vaps2484_backup_20170622163420/ws70/*  /apps/IBM/Websphere/ws70 & 
+
+These are the author | run all 4 at a time
+p120663vaps5091
+nohup cp -r /nas-cq-auth/backup/ws70_p120663vaps5091_backup_20170622161108/ws70/*  /apps/IBM/Websphere/ws70 &
+
+p120663vaps5092
+nohup cp -r /nas-cq-auth/backup/ws70_p120663vaps5092_backup_20170622161109/ws70/*  /apps/IBM/Websphere/ws70 &
+
+p120663vaps5081
+nohup cp -r /nas-cq-auth/backup/ws70_p120663vaps5081_backup_20170622161109/ws70/*  /apps/IBM/Websphere/ws70 &
+
+p120663vaps5082
+nohup cp -r /nas-cq-auth/backup/ws70_p120663vaps5082_backup_20170622161109/ws70/*  /apps/IBM/Websphere/ws70 &
+
+[root@p120663vaps2478 ~]# du -sh  /nas-cq-pub/backup/wcs70_sit_backup_20170622160710/wcs70 /apps/IBM/Websphere/wcs70; du -sh  /nas-cq-pub/backup/ws70_sit_backup_20170622160834/ws70 /apps/IBM/Websphere/ws70
+7.1G    /nas-cq-pub/backup/wcs70_sit_backup_20170622160710/wcs70
+7.1G    /apps/IBM/Websphere/wcs70
+9.3G    /nas-cq-pub/backup/ws70_sit_backup_20170622160834/ws70
+4.0K    /apps/IBM/Websphere/ws70
+[root@p120663vaps2478 ~]# 
+[root@p120663vaps5051 ~]# du -sh /nas-cq-auth/backup/wcs70_sitauth_backup_20170622160709/wcs70  /apps/IBM/Websphere/wcs70; du -sh /nas-cq-auth/backup/ws70_sitauth_backup_20170622160834/ws70 /apps/IBM/Websphere/ws70
+7.2G    /nas-cq-auth/backup/wcs70_sitauth_backup_20170622160709/wcs70
+7.1G    /apps/IBM/Websphere/wcs70
+12G     /nas-cq-auth/backup/ws70_sitauth_backup_20170622160834/ws70
+4.0K    /apps/IBM/Websphere/ws70
+[root@p120663vaps5051 ~]#
+
+
+to copy ws70 on DMGR nodes:
+
+nohup cp -r /nas-cq-pub/backup/ws70_sit_backup_20170622160834/ws70/* /apps/IBM/Websphere/ws70 & 
+run this 2478
+
+run this in 5051
+nohup cp -r /nas-cq-auth/backup/ws70_sitauth_backup_20170622160834/ws70/* /apps/IBM/Websphere/ws70 & 
+
+
+Confirmation:
+
+
+[‎7/‎10/‎2017 4:08 PM] GUNDA, KISHORE: 
+-----BEGIN: p120663vaps2366 ----- 
+
+6.9G    /apps/IBM/Web...
+-----BEGIN: p120663vaps2366 -----
+6.9G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps2366 -----
+
+-----BEGIN: p120663vaps2367 -----
+7.1G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps2367 -----
+
+-----BEGIN: p120663vaps2479 -----
+7.7G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps2479 -----
+
+-----BEGIN: p120663vaps2480 -----
+6.7G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps2480 -----
+
+-----BEGIN: p120663vaps2481 -----
+6.5G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps2481 -----
+
+-----BEGIN: p120663vaps2482 -----
+7.0G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps2482 -----
+
+-----BEGIN: p120663vaps2483 -----
+6.8G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps2483 -----
+
+-----BEGIN: p120663vaps2484 -----
+6.6G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps2484 -----
+
+-----BEGIN: p120663vaps5081 -----
+6.1G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps5081 -----
+
+-----BEGIN: p120663vaps5082 -----
+6.1G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps5082 -----
+
+-----BEGIN: p120663vaps5091 -----
+9.1G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps5091 -----
+
+-----BEGIN: p120663vaps5092 -----
+9.2G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps5092 -----
+
+
+Run the below cmds on Live nodes
+du -sh /nas-cq-pub/backup/ws70_p120663vaps2377_backup_20170628/ws70/  /apps/IBM/Websphere/ws70 
+
+p120663vaps2367
+du -sh /nas-cq-pub/backup/ws70_p120663vaps2367_backup_20170622163418/ws70/  /apps/IBM/Websphere/ws70 
+
+p120663vaps2482
+du -sh /nas-cq-pub/backup/ws70_p120663vaps2482_backup_20170622163419/ws70/  /apps/IBM/Websphere/ws70 
+
+p120663vaps2481
+du -sh /nas-cq-pub/backup/ws70_p120663vaps2481_backup_20170622163419/ws70/  /apps/IBM/Websphere/ws70 
+
+ws70_p120663vaps2479
+du -sh /nas-cq-pub/backup/ws70_p120663vaps2479_backup_20170622163419/ws70/  /apps/IBM/Websphere/ws70 
+
+p120663vaps2480
+du -sh /nas-cq-pub/backup/ws70_p120663vaps2480_backup_20170622163419/ws70/ /apps/IBM/Websphere/ws70
+
+p120663vaps2366
+du -sh /nas-cq-pub/backup/ws70_p120663vaps2366_backup_20170622163419/ws70/  /apps/IBM/Websphere/ws70 
+
+p120663vaps2483
+du -sh /nas-cq-pub/backup/ws70_p120663vaps2483_backup_20170622163420/ws70/  /apps/IBM/Websphere/ws70 
+
+p120663vaps2484
+du -sh /nas-cq-pub/backup/ws70_p120663vaps2484_backup_20170622163420/ws70/  /apps/IBM/Websphere/ws70  
+
+
+
+	================================================
+Run the below cmds for auth nodes
+p120663vaps5091
+du -sh /nas-cq-auth/backup/ws70_p120663vaps5091_backup_20170622161108/ws70/  /apps/IBM/Websphere/ws70 
+
+p120663vaps5092
+du -sh /nas-cq-auth/backup/ws70_p120663vaps5092_backup_20170622161109/ws70/  /apps/IBM/Websphere/ws70 
+
+p120663vaps5081
+du -sh /nas-cq-auth/backup/ws70_p120663vaps5081_backup_20170622161109/ws70/  /apps/IBM/Websphere/ws70 
+
+p120663vaps5082
+du -sh /nas-cq-auth/backup/ws70_p120663vaps5082_backup_20170622161109/ws70/  /apps/IBM/Websphere/ws70  
+give me the output , the we will validate source and destination sizes
+
+-----BEGIN: p120663vaps2377 -----
+3.5G    /nas-cq-pub/backup/ws70_p120663vaps2377_backup_20170628/ws70/
+3.5G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps2377 -----
+
+-----BEGIN: p120663vaps2367 -----
+7.1G    /nas-cq-pub/backup/ws70_p120663vaps2367_backup_20170622163418/ws70/
+7.1G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps2367 -----
+
+-----BEGIN: p120663vaps2481 -----
+6.5G    /nas-cq-pub/backup/ws70_p120663vaps2481_backup_20170622163419/ws70/
+6.5G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps2481 -----
+
+-----BEGIN: p120663vaps2480 -----
+6.7G    /nas-cq-pub/backup/ws70_p120663vaps2480_backup_20170622163419/ws70/
+6.7G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps2480 -----
+
+-----BEGIN: p120663vaps2482 -----
+7.0G    /nas-cq-pub/backup/ws70_p120663vaps2482_backup_20170622163419/ws70/
+7.0G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps2482 -----
+
+-----BEGIN: p120663vaps2479 -----
+7.7G    /nas-cq-pub/backup/ws70_p120663vaps2479_backup_20170622163419/ws70/
+7.7G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps2479 -----
+
+-----BEGIN: p120663vaps2366 -----
+7.0G    /nas-cq-pub/backup/ws70_p120663vaps2366_backup_20170622163419/ws70/
+6.9G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps2366 -----
+
+-----BEGIN: p120663vaps2484 -----
+6.6G    /nas-cq-pub/backup/ws70_p120663vaps2484_backup_20170622163420/ws70/
+6.6G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps2484 -----
+
+-----BEGIN: p120663vaps2483 -----
+6.8G    /nas-cq-pub/backup/ws70_p120663vaps2483_backup_20170622163420/ws70/
+6.8G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps2483 -----
+
+-----BEGIN: p120663vaps5091 -----
+9.1G    /nas-cq-auth/backup/ws70_p120663vaps5091_backup_20170622161108/ws70/
+9.1G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps5091 -----
+
+-----BEGIN: p120663vaps5092 -----
+9.2G    /nas-cq-auth/backup/ws70_p120663vaps5092_backup_20170622161109/ws70/
+9.2G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps5092 -----
+
+-----BEGIN: p120663vaps5081 -----
+6.1G    /nas-cq-auth/backup/ws70_p120663vaps5081_backup_20170622161109/ws70/
+6.1G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps5081 -----
+
+-----BEGIN: p120663vaps5082 -----
+6.2G    /nas-cq-auth/backup/ws70_p120663vaps5082_backup_20170622161109/ws70/
+6.1G    /apps/IBM/Websphere/ws70
+
+-----END: p120663vaps5082 -----
+
+[root@p120663vaps5051 ~]# du -sh /apps/IBM/Websphere/ws70/ /nas-cq-auth/backup/ws70_sitauth_backup_20170622160834/ws70/
+12G     /apps/IBM/Websphere/ws70/
+12G     /nas-cq-auth/backup/ws70_sitauth_backup_20170622160834/ws70/
+[root@p120663vaps5051 ~]#
+
+[root@p120663vaps2478 ~]# du -sh /apps/IBM/Websphere/ws70 /nas-cq-pub/backup/ws70_sit_backup_20170622160834/ws70/
+9.2G    /apps/IBM/Websphere/ws70
+9.3G    /nas-cq-pub/backup/ws70_sit_backup_20170622160834/ws70/
+[root@p120663vaps2478 ~]# 
+
+cd /apps/IBM/Websphere/ 
+
+
+# Step 1
+p120663vaps5051
+p120663vaps2478
+cd /apps/IBM/Websphere/
+chown -R wasadmin:wasgroup wcs70 ws70
+
+
+cd /apps/IBM/Websphere/
+chown -R wasadmin:wasgroup ws70
+p120663vaps2366
+p120663vaps2367
+p120663vaps2377
+p120663vaps2478
+p120663vaps2479
+p120663vaps2480
+p120663vaps2481
+p120663vaps2482
+p120663vaps2483
+p120663vaps2484
+p120663vaps5051
+p120663vaps5081
+p120663vaps5082
+p120663vaps5091
+p120663vaps5092
+
+#Step 2
+1. check the log mount are there or not, if not then do it
+
+#Step 3
+
+1. start the DMGRs in auth and live
+
+2. start nodeagent and JVMs in both auth and live nodes 

@@ -1,0 +1,1731 @@
+06:09:03 deployment with no stack
+06:09:04 requesting deployment 1499317690
+06:09:04 waiting for ATT response
+06:09:05 if this takes much longer than 10-15min, contact AT&T support
+06:09:17 
+06:09:17 PLAYBOOK: runlist.1499317753.yml ***********************************************
+06:09:17 Plays to be executed
+06:09:17 version info in author nodes
+06:09:17 version info in live nodes
+06:09:17 version info in dmgr
+06:09:17 
+06:09:17 PLAY [version info in author nodes] ********************************************
+06:09:17 
+06:09:17 TASK [setup] *******************************************************************
+06:09:20 ok: [p120663vaps5092]
+06:09:20 ok: [p120663vaps5081]
+06:09:21 ok: [p120663vaps5091]
+06:09:22 ok: [p120663vaps5082]
+06:09:22 
+06:09:22 TASK [ws-version-info : Create log location] ***********************************
+06:09:22 task path: /home/ansible/ansible_scripts/v2.419.pr201/roles/ws-version-info/tasks/main.yml:1
+06:09:24 changed: [p120663vaps5081] => 
+06:09:24 changed: true
+06:09:24 gid: 700
+06:09:24 group: wasgroup
+06:09:24 mode: '0755'
+06:09:24 owner: wasadmin
+06:09:24 path: /mslogs/deploy-logs/1499317690
+06:09:24 size: 4096
+06:09:24 state: directory
+06:09:24 uid: 701
+06:09:24 
+06:09:24 changed: [p120663vaps5092] => 
+06:09:24 changed: true
+06:09:24 gid: 700
+06:09:24 group: wasgroup
+06:09:24 mode: '0755'
+06:09:24 owner: wasadmin
+06:09:24 path: /mslogs/deploy-logs/1499317690
+06:09:24 size: 4096
+06:09:24 state: directory
+06:09:24 uid: 701
+06:09:24 
+06:09:24 changed: [p120663vaps5082] => 
+06:09:24 changed: true
+06:09:24 gid: 700
+06:09:24 group: wasgroup
+06:09:24 mode: '0755'
+06:09:24 owner: wasadmin
+06:09:24 path: /mslogs/deploy-logs/1499317690
+06:09:24 size: 4096
+06:09:24 state: directory
+06:09:24 uid: 701
+06:09:24 
+06:09:25 changed: [p120663vaps5091] => 
+06:09:25 changed: true
+06:09:25 gid: 700
+06:09:25 group: wasgroup
+06:09:25 mode: '0755'
+06:09:25 owner: wasadmin
+06:09:25 path: /mslogs/deploy-logs/1499317690
+06:09:25 size: 4096
+06:09:25 state: directory
+06:09:25 uid: 701
+06:09:25 
+06:09:25 
+06:09:25 TASK [ws-version-info : List of profiles in dmgr and nodes] ********************
+06:09:25 task path: /home/ansible/ansible_scripts/v2.419.pr201/roles/ws-version-info/tasks/main.yml:7
+06:09:31 changed: [p120663vaps5081] => 
+06:09:31 changed: true
+06:09:31 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -listProfiles
+06:09:31 delta: '0:00:02.999730'
+06:09:31 end: '2017-07-06 06:13:48.646981'
+06:09:31 rc: 0
+06:09:31 start: '2017-07-06 06:13:45.647251'
+06:09:31 stderr: ''
+06:09:31 stdout: '[Node]'
+06:09:31 stdout_lines:
+06:09:31 - '[Node]'
+06:09:31 warnings: []
+06:09:31 
+06:09:31 changed: [p120663vaps5091] => 
+06:09:31 changed: true
+06:09:31 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -listProfiles
+06:09:31 delta: '0:00:03.431409'
+06:09:31 end: '2017-07-06 06:13:48.989858'
+06:09:31 rc: 0
+06:09:31 start: '2017-07-06 06:13:45.558449'
+06:09:31 stderr: ''
+06:09:31 stdout: '[Node]'
+06:09:31 stdout_lines:
+06:09:31 - '[Node]'
+06:09:31 warnings: []
+06:09:31 
+06:09:32 changed: [p120663vaps5082] => 
+06:09:32 changed: true
+06:09:32 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -listProfiles
+06:09:32 delta: '0:00:03.782001'
+06:09:32 end: '2017-07-06 06:13:49.161550'
+06:09:32 rc: 0
+06:09:32 start: '2017-07-06 06:13:45.379549'
+06:09:32 stderr: ''
+06:09:32 stdout: '[Node]'
+06:09:32 stdout_lines:
+06:09:32 - '[Node]'
+06:09:32 warnings: []
+06:09:32 
+06:09:34 changed: [p120663vaps5092] => 
+06:09:34 changed: true
+06:09:34 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -listProfiles
+06:09:34 delta: '0:00:05.945494'
+06:09:34 end: '2017-07-06 06:13:51.462462'
+06:09:34 rc: 0
+06:09:34 start: '2017-07-06 06:13:45.516968'
+06:09:34 stderr: ''
+06:09:34 stdout: '[Node]'
+06:09:34 stdout_lines:
+06:09:34 - '[Node]'
+06:09:34 warnings: []
+06:09:34 
+06:09:34 
+06:09:34 TASK [ws-version-info : Validate profiles registry on dmgr and nodes] **********
+06:09:34 task path: /home/ansible/ansible_scripts/v2.419.pr201/roles/ws-version-info/tasks/main.yml:13
+06:09:39 changed: [p120663vaps5091] => 
+06:09:39 changed: true
+06:09:39 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -validateRegistry
+06:09:39 delta: '0:00:03.055108'
+06:09:39 end: '2017-07-06 06:13:56.991979'
+06:09:39 rc: 0
+06:09:39 start: '2017-07-06 06:13:53.936871'
+06:09:39 stderr: ''
+06:09:39 stdout: All of the profiles in the registry are valid.
+06:09:39 stdout_lines:
+06:09:39 - All of the profiles in the registry are valid.
+06:09:39 warnings: []
+06:09:39 
+06:09:40 changed: [p120663vaps5081] => 
+06:09:40 changed: true
+06:09:40 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -validateRegistry
+06:09:40 delta: '0:00:02.969086'
+06:09:40 end: '2017-07-06 06:13:57.014455'
+06:09:40 rc: 0
+06:09:40 start: '2017-07-06 06:13:54.045369'
+06:09:40 stderr: ''
+06:09:40 stdout: All of the profiles in the registry are valid.
+06:09:40 stdout_lines:
+06:09:40 - All of the profiles in the registry are valid.
+06:09:40 warnings: []
+06:09:40 
+06:09:40 changed: [p120663vaps5082] => 
+06:09:40 changed: true
+06:09:40 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -validateRegistry
+06:09:40 delta: '0:00:03.286608'
+06:09:40 end: '2017-07-06 06:13:57.442625'
+06:09:40 rc: 0
+06:09:40 start: '2017-07-06 06:13:54.156017'
+06:09:40 stderr: ''
+06:09:40 stdout: All of the profiles in the registry are valid.
+06:09:40 stdout_lines:
+06:09:40 - All of the profiles in the registry are valid.
+06:09:40 warnings: []
+06:09:40 
+06:09:41 changed: [p120663vaps5092] => 
+06:09:41 changed: true
+06:09:41 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -validateRegistry
+06:09:41 delta: '0:00:05.334363'
+06:09:41 end: '2017-07-06 06:13:59.526376'
+06:09:41 rc: 0
+06:09:41 start: '2017-07-06 06:13:54.192013'
+06:09:41 stderr: ''
+06:09:41 stdout: All of the profiles in the registry are valid.
+06:09:41 stdout_lines:
+06:09:41 - All of the profiles in the registry are valid.
+06:09:41 warnings: []
+06:09:41 
+06:09:42 
+06:09:42 TASK [ws-version-info : Validate if the was64bit fixpacks installed] ***********
+06:09:42 task path: /home/ansible/ansible_scripts/v2.419.pr201/roles/ws-version-info/tasks/main.yml:19
+06:09:46 changed: [p120663vaps5092] => 
+06:09:46 changed: true
+06:09:46 cmd: cd /apps/IBM/Websphere/ws70/bin && ./versionInfo.sh -maintenancePackages | egrep
+06:09:46   -e Name -e Version -e Architecture -e 7.0.0-WS-WAS-LinuxX64-FP0000043 -e 7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:09:46   -e 7.0.0.43-WS-WAS-IFPI78148 -e DYNACACHE
+06:09:46 delta: '0:00:03.151876'
+06:09:46 end: '2017-07-06 06:14:05.006471'
+06:09:46 rc: 0
+06:09:46 start: '2017-07-06 06:14:01.854595'
+06:09:46 stderr: ''
+06:09:46 stdout: |-
+06:09:46   WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11
+06:09:46   Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:09:46   Name                     IBM WebSphere Application Server - ND
+06:09:46   Version                  7.0.0.43
+06:09:46   Architecture             AMD (64 bit)
+06:09:46   Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:09:46   Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:09:46   Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:09:46   Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:09:46 stdout_lines:
+06:09:46 - 'WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11'
+06:09:46 - Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:09:46 - Name                     IBM WebSphere Application Server - ND
+06:09:46 - Version                  7.0.0.43
+06:09:46 - Architecture             AMD (64 bit)
+06:09:46 - Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:09:46 - Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:09:46 - Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:09:46 - Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:09:46 warnings: []
+06:09:46 
+06:09:47 changed: [p120663vaps5082] => 
+06:09:47 changed: true
+06:09:47 cmd: cd /apps/IBM/Websphere/ws70/bin && ./versionInfo.sh -maintenancePackages | egrep
+06:09:47   -e Name -e Version -e Architecture -e 7.0.0-WS-WAS-LinuxX64-FP0000043 -e 7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:09:47   -e 7.0.0.43-WS-WAS-IFPI78148 -e DYNACACHE
+06:09:47 delta: '0:00:03.682285'
+06:09:47 end: '2017-07-06 06:14:05.314942'
+06:09:47 rc: 0
+06:09:47 start: '2017-07-06 06:14:01.632657'
+06:09:47 stderr: ''
+06:09:47 stdout: |-
+06:09:47   WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11
+06:09:47   Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:09:47   Name                     IBM WebSphere Application Server - ND
+06:09:47   Version                  7.0.0.43
+06:09:47   Architecture             AMD (64 bit)
+06:09:47   Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:09:47   Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:09:47   Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:09:47   Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:09:47 stdout_lines:
+06:09:47 - 'WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11'
+06:09:47 - Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:09:47 - Name                     IBM WebSphere Application Server - ND
+06:09:47 - Version                  7.0.0.43
+06:09:47 - Architecture             AMD (64 bit)
+06:09:47 - Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:09:47 - Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:09:47 - Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:09:47 - Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:09:47 warnings: []
+06:09:47 
+06:09:48 changed: [p120663vaps5081] => 
+06:09:48 changed: true
+06:09:48 cmd: cd /apps/IBM/Websphere/ws70/bin && ./versionInfo.sh -maintenancePackages | egrep
+06:09:48   -e Name -e Version -e Architecture -e 7.0.0-WS-WAS-LinuxX64-FP0000043 -e 7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:09:48   -e 7.0.0.43-WS-WAS-IFPI78148 -e DYNACACHE
+06:09:48 delta: '0:00:03.120923'
+06:09:48 end: '2017-07-06 06:14:05.413240'
+06:09:48 rc: 0
+06:09:48 start: '2017-07-06 06:14:02.292317'
+06:09:48 stderr: ''
+06:09:48 stdout: |-
+06:09:48   WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11
+06:09:48   Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:09:48   Name                     IBM WebSphere Application Server - ND
+06:09:48   Version                  7.0.0.43
+06:09:48   Architecture             AMD (64 bit)
+06:09:48   Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:09:48   Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:09:48   Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:09:48   Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:09:48 stdout_lines:
+06:09:48 - 'WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11'
+06:09:48 - Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:09:48 - Name                     IBM WebSphere Application Server - ND
+06:09:48 - Version                  7.0.0.43
+06:09:48 - Architecture             AMD (64 bit)
+06:09:48 - Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:09:48 - Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:09:48 - Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:09:48 - Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:09:48 warnings: []
+06:09:48 
+06:09:48 changed: [p120663vaps5091] => 
+06:09:48 changed: true
+06:09:48 cmd: cd /apps/IBM/Websphere/ws70/bin && ./versionInfo.sh -maintenancePackages | egrep
+06:09:48   -e Name -e Version -e Architecture -e 7.0.0-WS-WAS-LinuxX64-FP0000043 -e 7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:09:48   -e 7.0.0.43-WS-WAS-IFPI78148 -e DYNACACHE
+06:09:48 delta: '0:00:04.275461'
+06:09:48 end: '2017-07-06 06:14:06.469132'
+06:09:48 rc: 0
+06:09:48 start: '2017-07-06 06:14:02.193671'
+06:09:48 stderr: ''
+06:09:48 stdout: |-
+06:09:48   WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11
+06:09:48   Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:09:48   Name                     IBM WebSphere Application Server - ND
+06:09:48   Version                  7.0.0.43
+06:09:48   Architecture             AMD (64 bit)
+06:09:48   Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:09:48   Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:09:48   Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:09:48   Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:09:48 stdout_lines:
+06:09:48 - 'WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11'
+06:09:48 - Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:09:48 - Name                     IBM WebSphere Application Server - ND
+06:09:48 - Version                  7.0.0.43
+06:09:48 - Architecture             AMD (64 bit)
+06:09:48 - Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:09:48 - Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:09:48 - Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:09:48 - Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:09:48 warnings: []
+06:09:48 
+06:09:48 
+06:09:48 TASK [ws-version-info : Validate if the wxs packages are installed] ************
+06:09:49 task path: /home/ansible/ansible_scripts/v2.419.pr201/roles/ws-version-info/tasks/main.yml:25
+06:09:50 fatal: [p120663vaps5082]: FAILED! => 
+06:09:50 changed: true
+06:09:50 cmd: /apps/IBM/Websphere/im/eclipse/tools/imcl listInstalledPackages -dataLocation
+06:09:50   /home/wasadmin/var/ibm/InstallationManager -features -long
+06:09:50 delta: '0:00:00.010272'
+06:09:50 end: '2017-07-06 06:14:08.674787'
+06:09:50 failed: true
+06:09:50 rc: 127
+06:09:50 start: '2017-07-06 06:14:08.664515'
+06:09:50 stderr: '/bin/sh: /apps/IBM/Websphere/im/eclipse/tools/imcl: No such file or directory'
+06:09:50 stdout: ''
+06:09:50 stdout_lines: []
+06:09:50 warnings: []
+06:09:50 
+06:09:50 ...ignoring
+06:09:50 fatal: [p120663vaps5091]: FAILED! => 
+06:09:50 changed: true
+06:09:50 cmd: /apps/IBM/Websphere/im/eclipse/tools/imcl listInstalledPackages -dataLocation
+06:09:50   /home/wasadmin/var/ibm/InstallationManager -features -long
+06:09:50 delta: '0:00:00.012780'
+06:09:50 end: '2017-07-06 06:14:08.765759'
+06:09:50 failed: true
+06:09:50 rc: 127
+06:09:50 start: '2017-07-06 06:14:08.752979'
+06:09:50 stderr: '/bin/sh: /apps/IBM/Websphere/im/eclipse/tools/imcl: No such file or directory'
+06:09:50 stdout: ''
+06:09:50 stdout_lines: []
+06:09:50 warnings: []
+06:09:50 
+06:09:51 ...ignoring
+06:09:52 fatal: [p120663vaps5081]: FAILED! => 
+06:09:52 changed: true
+06:09:52 cmd: /apps/IBM/Websphere/im/eclipse/tools/imcl listInstalledPackages -dataLocation
+06:09:52   /home/wasadmin/var/ibm/InstallationManager -features -long
+06:09:52 delta: '0:00:00.012142'
+06:09:52 end: '2017-07-06 06:14:08.966791'
+06:09:52 failed: true
+06:09:52 rc: 127
+06:09:52 start: '2017-07-06 06:14:08.954649'
+06:09:52 stderr: '/bin/sh: /apps/IBM/Websphere/im/eclipse/tools/imcl: No such file or directory'
+06:09:52 stdout: ''
+06:09:52 stdout_lines: []
+06:09:52 warnings: []
+06:09:52 
+06:09:52 ...ignoring
+06:09:53 fatal: [p120663vaps5092]: FAILED! => 
+06:09:53 changed: true
+06:09:53 cmd: /apps/IBM/Websphere/im/eclipse/tools/imcl listInstalledPackages -dataLocation
+06:09:53   /home/wasadmin/var/ibm/InstallationManager -features -long
+06:09:53 delta: '0:00:00.009477'
+06:09:53 end: '2017-07-06 06:14:09.215530'
+06:09:53 failed: true
+06:09:53 rc: 127
+06:09:53 start: '2017-07-06 06:14:09.206053'
+06:09:53 stderr: '/bin/sh: /apps/IBM/Websphere/im/eclipse/tools/imcl: No such file or directory'
+06:09:53 stdout: ''
+06:09:53 stdout_lines: []
+06:09:53 warnings: []
+06:09:53 
+06:09:53 ...ignoring
+06:09:53 
+06:09:53 TASK [ws-version-info : Read permission to logs] *******************************
+06:09:53 task path: /home/ansible/ansible_scripts/v2.419.pr201/roles/ws-version-info/tasks/main.yml:31
+06:09:55 changed: [p120663vaps5092] => 
+06:09:55 changed: true
+06:09:55 cmd: chmod -R 755 /mslogs/deploy-logs/1499317690
+06:09:55 delta: '0:00:00.010496'
+06:09:55 end: '2017-07-06 06:14:12.012479'
+06:09:55 rc: 0
+06:09:55 start: '2017-07-06 06:14:12.001983'
+06:09:55 stderr: ''
+06:09:55 stdout: ''
+06:09:55 stdout_lines: []
+06:09:55 warnings:
+06:09:55 - Consider using file module with mode rather than running chmod
+06:09:56 
+06:09:56  [WARNING]: Consider using file module with mode rather than running chmod
+06:09:56 
+06:09:56 changed: [p120663vaps5082] => 
+06:09:56 changed: true
+06:09:56 cmd: chmod -R 755 /mslogs/deploy-logs/1499317690
+06:09:56 delta: '0:00:00.011318'
+06:09:56 end: '2017-07-06 06:14:11.889019'
+06:09:56 rc: 0
+06:09:56 start: '2017-07-06 06:14:11.877701'
+06:09:56 stderr: ''
+06:09:56 stdout: ''
+06:09:56 stdout_lines: []
+06:09:56 warnings:
+06:09:56 - Consider using file module with mode rather than running chmod
+06:09:56 
+06:09:56 changed: [p120663vaps5091] => 
+06:09:56 changed: true
+06:09:56 cmd: chmod -R 755 /mslogs/deploy-logs/1499317690
+06:09:56 delta: '0:00:00.012451'
+06:09:56 end: '2017-07-06 06:14:11.995362'
+06:09:56 rc: 0
+06:09:56 start: '2017-07-06 06:14:11.982911'
+06:09:56 stderr: ''
+06:09:56 stdout: ''
+06:09:56 stdout_lines: []
+06:09:56 warnings:
+06:09:56 - Consider using file module with mode rather than running chmod
+06:09:56 
+06:09:57 changed: [p120663vaps5081] => 
+06:09:57 changed: true
+06:09:57 cmd: chmod -R 755 /mslogs/deploy-logs/1499317690
+06:09:57 delta: '0:00:00.010995'
+06:09:57 end: '2017-07-06 06:14:12.087361'
+06:09:57 rc: 0
+06:09:57 start: '2017-07-06 06:14:12.076366'
+06:09:57 stderr: ''
+06:09:57 stdout: ''
+06:09:57 stdout_lines: []
+06:09:57 warnings:
+06:09:57 - Consider using file module with mode rather than running chmod
+06:09:57 
+06:09:57 
+06:09:57 PLAY [version info in live nodes] **********************************************
+06:09:57 
+06:09:57 TASK [setup] *******************************************************************
+06:09:58 ok: [p120663vaps2482]
+06:09:59 ok: [p120663vaps2481]
+06:09:59 ok: [p120663vaps2367]
+06:09:59 ok: [p120663vaps2484]
+06:09:59 ok: [p120663vaps2480]
+06:10:00 ok: [p120663vaps2483]
+06:10:01 ok: [p120663vaps2366]
+06:10:01 ok: [p120663vaps2479]
+06:10:01 ok: [p120663vaps2377]
+06:10:02 
+06:10:02 TASK [ws-version-info : Create log location] ***********************************
+06:10:02 task path: /home/ansible/ansible_scripts/v2.419.pr201/roles/ws-version-info/tasks/main.yml:1
+06:10:03 changed: [p120663vaps2366] => 
+06:10:03 changed: true
+06:10:03 gid: 700
+06:10:03 group: wasgroup
+06:10:03 mode: '0755'
+06:10:03 owner: wasadmin
+06:10:03 path: /mslogs/deploy-logs/1499317690
+06:10:03 size: 4096
+06:10:03 state: directory
+06:10:03 uid: 701
+06:10:03 
+06:10:05 changed: [p120663vaps2481] => 
+06:10:05 changed: true
+06:10:05 gid: 700
+06:10:05 group: wasgroup
+06:10:05 mode: '0755'
+06:10:05 owner: wasadmin
+06:10:05 path: /mslogs/deploy-logs/1499317690
+06:10:05 size: 4096
+06:10:05 state: directory
+06:10:05 uid: 701
+06:10:05 
+06:10:05 changed: [p120663vaps2480] => 
+06:10:05 changed: true
+06:10:05 gid: 700
+06:10:05 group: wasgroup
+06:10:05 mode: '0755'
+06:10:05 owner: wasadmin
+06:10:05 path: /mslogs/deploy-logs/1499317690
+06:10:05 size: 4096
+06:10:05 state: directory
+06:10:05 uid: 701
+06:10:05 
+06:10:05 changed: [p120663vaps2479] => 
+06:10:05 changed: true
+06:10:05 gid: 700
+06:10:05 group: wasgroup
+06:10:05 mode: '0755'
+06:10:05 owner: wasadmin
+06:10:05 path: /mslogs/deploy-logs/1499317690
+06:10:05 size: 4096
+06:10:05 state: directory
+06:10:05 uid: 701
+06:10:05 
+06:10:06 changed: [p120663vaps2367] => 
+06:10:06 changed: true
+06:10:06 gid: 700
+06:10:06 group: wasgroup
+06:10:06 mode: '0755'
+06:10:06 owner: wasadmin
+06:10:06 path: /mslogs/deploy-logs/1499317690
+06:10:06 size: 4096
+06:10:06 state: directory
+06:10:06 uid: 701
+06:10:06 
+06:10:06 changed: [p120663vaps2482] => 
+06:10:06 changed: true
+06:10:06 gid: 700
+06:10:06 group: wasgroup
+06:10:06 mode: '0755'
+06:10:06 owner: wasadmin
+06:10:06 path: /mslogs/deploy-logs/1499317690
+06:10:06 size: 4096
+06:10:06 state: directory
+06:10:06 uid: 701
+06:10:06 
+06:10:06 changed: [p120663vaps2484] => 
+06:10:06 changed: true
+06:10:06 gid: 700
+06:10:06 group: wasgroup
+06:10:06 mode: '0755'
+06:10:06 owner: wasadmin
+06:10:06 path: /mslogs/deploy-logs/1499317690
+06:10:06 size: 4096
+06:10:06 state: directory
+06:10:06 uid: 701
+06:10:06 
+06:10:06 changed: [p120663vaps2483] => 
+06:10:06 changed: true
+06:10:06 gid: 700
+06:10:06 group: wasgroup
+06:10:06 mode: '0755'
+06:10:06 owner: wasadmin
+06:10:06 path: /mslogs/deploy-logs/1499317690
+06:10:06 size: 4096
+06:10:06 state: directory
+06:10:06 uid: 701
+06:10:06 
+06:10:08 changed: [p120663vaps2377] => 
+06:10:08 changed: true
+06:10:08 gid: 700
+06:10:08 group: wasgroup
+06:10:08 mode: '0755'
+06:10:08 owner: wasadmin
+06:10:08 path: /mslogs/deploy-logs/1499317690
+06:10:08 size: 4096
+06:10:08 state: directory
+06:10:08 uid: 701
+06:10:08 
+06:10:08 
+06:10:08 TASK [ws-version-info : List of profiles in dmgr and nodes] ********************
+06:10:08 task path: /home/ansible/ansible_scripts/v2.419.pr201/roles/ws-version-info/tasks/main.yml:7
+06:10:12 changed: [p120663vaps2482] => 
+06:10:12 changed: true
+06:10:12 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -listProfiles
+06:10:12 delta: '0:00:03.239353'
+06:10:12 end: '2017-07-06 06:14:30.804639'
+06:10:12 rc: 0
+06:10:12 start: '2017-07-06 06:14:27.565286'
+06:10:12 stderr: ''
+06:10:12 stdout: '[Node]'
+06:10:12 stdout_lines:
+06:10:12 - '[Node]'
+06:10:12 warnings: []
+06:10:12 
+06:10:12 changed: [p120663vaps2366] => 
+06:10:12 changed: true
+06:10:12 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -listProfiles
+06:10:12 delta: '0:00:02.917858'
+06:10:12 end: '2017-07-06 06:14:30.790516'
+06:10:12 rc: 0
+06:10:12 start: '2017-07-06 06:14:27.872658'
+06:10:12 stderr: ''
+06:10:12 stdout: '[Node]'
+06:10:12 stdout_lines:
+06:10:12 - '[Node]'
+06:10:12 warnings: []
+06:10:12 
+06:10:13 changed: [p120663vaps2367] => 
+06:10:13 changed: true
+06:10:13 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -listProfiles
+06:10:13 delta: '0:00:02.864963'
+06:10:13 end: '2017-07-06 06:14:30.976403'
+06:10:13 rc: 0
+06:10:13 start: '2017-07-06 06:14:28.111440'
+06:10:13 stderr: ''
+06:10:13 stdout: '[Node]'
+06:10:13 stdout_lines:
+06:10:13 - '[Node]'
+06:10:13 warnings: []
+06:10:13 
+06:10:14 changed: [p120663vaps2481] => 
+06:10:14 changed: true
+06:10:14 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -listProfiles
+06:10:14 delta: '0:00:03.308200'
+06:10:14 end: '2017-07-06 06:14:31.551553'
+06:10:14 rc: 0
+06:10:14 start: '2017-07-06 06:14:28.243353'
+06:10:14 stderr: ''
+06:10:14 stdout: '[Node]'
+06:10:14 stdout_lines:
+06:10:14 - '[Node]'
+06:10:14 warnings: []
+06:10:14 
+06:10:14 changed: [p120663vaps2480] => 
+06:10:14 changed: true
+06:10:14 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -listProfiles
+06:10:14 delta: '0:00:04.667334'
+06:10:14 end: '2017-07-06 06:14:32.175792'
+06:10:14 rc: 0
+06:10:14 start: '2017-07-06 06:14:27.508458'
+06:10:14 stderr: ''
+06:10:14 stdout: '[Node]'
+06:10:14 stdout_lines:
+06:10:14 - '[Node]'
+06:10:14 warnings: []
+06:10:14 
+06:10:15 changed: [p120663vaps2479] => 
+06:10:15 changed: true
+06:10:15 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -listProfiles
+06:10:15 delta: '0:00:03.074961'
+06:10:15 end: '2017-07-06 06:14:32.838056'
+06:10:15 rc: 0
+06:10:15 start: '2017-07-06 06:14:29.763095'
+06:10:15 stderr: ''
+06:10:15 stdout: '[Node]'
+06:10:15 stdout_lines:
+06:10:15 - '[Node]'
+06:10:15 warnings: []
+06:10:15 
+06:10:16 changed: [p120663vaps2483] => 
+06:10:16 changed: true
+06:10:16 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -listProfiles
+06:10:16 delta: '0:00:04.347080'
+06:10:16 end: '2017-07-06 06:14:33.474936'
+06:10:16 rc: 0
+06:10:16 start: '2017-07-06 06:14:29.127856'
+06:10:16 stderr: ''
+06:10:16 stdout: '[Node]'
+06:10:16 stdout_lines:
+06:10:16 - '[Node]'
+06:10:16 warnings: []
+06:10:16 
+06:10:20 changed: [p120663vaps2377] => 
+06:10:20 changed: true
+06:10:20 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -listProfiles
+06:10:20 delta: '0:00:08.350119'
+06:10:20 end: '2017-07-06 06:14:37.327148'
+06:10:20 rc: 0
+06:10:20 start: '2017-07-06 06:14:28.977029'
+06:10:20 stderr: ''
+06:10:20 stdout: '[Node]'
+06:10:20 stdout_lines:
+06:10:20 - '[Node]'
+06:10:20 warnings: []
+06:10:20 
+06:10:24 changed: [p120663vaps2484] => 
+06:10:24 changed: true
+06:10:24 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -listProfiles
+06:10:24 delta: '0:00:11.299301'
+06:10:24 end: '2017-07-06 06:14:41.270606'
+06:10:24 rc: 0
+06:10:24 start: '2017-07-06 06:14:29.971305'
+06:10:24 stderr: ''
+06:10:24 stdout: '[Node]'
+06:10:24 stdout_lines:
+06:10:24 - '[Node]'
+06:10:24 warnings: []
+06:10:24 
+06:10:24 
+06:10:24 TASK [ws-version-info : Validate profiles registry on dmgr and nodes] **********
+06:10:24 task path: /home/ansible/ansible_scripts/v2.419.pr201/roles/ws-version-info/tasks/main.yml:13
+06:10:29 changed: [p120663vaps2366] => 
+06:10:29 changed: true
+06:10:29 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -validateRegistry
+06:10:29 delta: '0:00:02.899832'
+06:10:29 end: '2017-07-06 06:14:47.326289'
+06:10:29 rc: 0
+06:10:29 start: '2017-07-06 06:14:44.426457'
+06:10:29 stderr: ''
+06:10:29 stdout: All of the profiles in the registry are valid.
+06:10:29 stdout_lines:
+06:10:29 - All of the profiles in the registry are valid.
+06:10:29 warnings: []
+06:10:29 
+06:10:31 changed: [p120663vaps2367] => 
+06:10:31 changed: true
+06:10:31 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -validateRegistry
+06:10:31 delta: '0:00:02.958655'
+06:10:31 end: '2017-07-06 06:14:48.078583'
+06:10:31 rc: 0
+06:10:31 start: '2017-07-06 06:14:45.119928'
+06:10:31 stderr: ''
+06:10:31 stdout: All of the profiles in the registry are valid.
+06:10:31 stdout_lines:
+06:10:31 - All of the profiles in the registry are valid.
+06:10:31 warnings: []
+06:10:31 
+06:10:31 changed: [p120663vaps2481] => 
+06:10:31 changed: true
+06:10:31 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -validateRegistry
+06:10:31 delta: '0:00:02.938567'
+06:10:31 end: '2017-07-06 06:14:48.266422'
+06:10:31 rc: 0
+06:10:31 start: '2017-07-06 06:14:45.327855'
+06:10:31 stderr: ''
+06:10:31 stdout: All of the profiles in the registry are valid.
+06:10:31 stdout_lines:
+06:10:31 - All of the profiles in the registry are valid.
+06:10:31 warnings: []
+06:10:31 
+06:10:31 changed: [p120663vaps2479] => 
+06:10:31 changed: true
+06:10:31 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -validateRegistry
+06:10:31 delta: '0:00:02.973044'
+06:10:31 end: '2017-07-06 06:14:48.366686'
+06:10:31 rc: 0
+06:10:31 start: '2017-07-06 06:14:45.393642'
+06:10:31 stderr: ''
+06:10:31 stdout: All of the profiles in the registry are valid.
+06:10:31 stdout_lines:
+06:10:31 - All of the profiles in the registry are valid.
+06:10:31 warnings: []
+06:10:31 
+06:10:31 changed: [p120663vaps2482] => 
+06:10:31 changed: true
+06:10:31 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -validateRegistry
+06:10:31 delta: '0:00:03.226616'
+06:10:31 end: '2017-07-06 06:14:48.700259'
+06:10:31 rc: 0
+06:10:31 start: '2017-07-06 06:14:45.473643'
+06:10:31 stderr: ''
+06:10:31 stdout: All of the profiles in the registry are valid.
+06:10:31 stdout_lines:
+06:10:31 - All of the profiles in the registry are valid.
+06:10:31 warnings: []
+06:10:31 
+06:10:33 changed: [p120663vaps2480] => 
+06:10:33 changed: true
+06:10:33 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -validateRegistry
+06:10:33 delta: '0:00:04.957390'
+06:10:33 end: '2017-07-06 06:14:49.569192'
+06:10:33 rc: 0
+06:10:33 start: '2017-07-06 06:14:44.611802'
+06:10:33 stderr: ''
+06:10:33 stdout: All of the profiles in the registry are valid.
+06:10:33 stdout_lines:
+06:10:33 - All of the profiles in the registry are valid.
+06:10:33 warnings: []
+06:10:33 
+06:10:33 changed: [p120663vaps2483] => 
+06:10:33 changed: true
+06:10:33 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -validateRegistry
+06:10:33 delta: '0:00:04.599838'
+06:10:33 end: '2017-07-06 06:14:49.995352'
+06:10:33 rc: 0
+06:10:33 start: '2017-07-06 06:14:45.395514'
+06:10:33 stderr: ''
+06:10:33 stdout: All of the profiles in the registry are valid.
+06:10:33 stdout_lines:
+06:10:33 - All of the profiles in the registry are valid.
+06:10:33 warnings: []
+06:10:33 
+06:10:35 changed: [p120663vaps2377] => 
+06:10:35 changed: true
+06:10:35 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -validateRegistry
+06:10:35 delta: '0:00:07.077966'
+06:10:35 end: '2017-07-06 06:14:52.672652'
+06:10:35 rc: 0
+06:10:35 start: '2017-07-06 06:14:45.594686'
+06:10:35 stderr: ''
+06:10:35 stdout: All of the profiles in the registry are valid.
+06:10:35 stdout_lines:
+06:10:35 - All of the profiles in the registry are valid.
+06:10:35 warnings: []
+06:10:35 
+06:10:38 changed: [p120663vaps2484] => 
+06:10:38 changed: true
+06:10:38 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -validateRegistry
+06:10:38 delta: '0:00:10.688056'
+06:10:38 end: '2017-07-06 06:14:55.866958'
+06:10:38 rc: 0
+06:10:38 start: '2017-07-06 06:14:45.178902'
+06:10:38 stderr: ''
+06:10:38 stdout: All of the profiles in the registry are valid.
+06:10:38 stdout_lines:
+06:10:38 - All of the profiles in the registry are valid.
+06:10:38 warnings: []
+06:10:38 
+06:10:38 
+06:10:38 TASK [ws-version-info : Validate if the was64bit fixpacks installed] ***********
+06:10:38 task path: /home/ansible/ansible_scripts/v2.419.pr201/roles/ws-version-info/tasks/main.yml:19
+06:10:44 changed: [p120663vaps2479] => 
+06:10:44 changed: true
+06:10:44 cmd: cd /apps/IBM/Websphere/ws70/bin && ./versionInfo.sh -maintenancePackages | egrep
+06:10:44   -e Name -e Version -e Architecture -e 7.0.0-WS-WAS-LinuxX64-FP0000043 -e 7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:44   -e 7.0.0.43-WS-WAS-IFPI78148 -e DYNACACHE
+06:10:44 delta: '0:00:03.516672'
+06:10:44 end: '2017-07-06 06:15:02.268267'
+06:10:44 rc: 0
+06:10:44 start: '2017-07-06 06:14:58.751595'
+06:10:44 stderr: ''
+06:10:44 stdout: |-
+06:10:44   WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11
+06:10:44   Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:10:44   Name                     IBM WebSphere Application Server - ND
+06:10:44   Version                  7.0.0.43
+06:10:44   Architecture             AMD (64 bit)
+06:10:44   Name                     IBM WebSphere eXtreme Scale
+06:10:44   Version                  8.6.0.7
+06:10:44   Architecture             AMD (64 bit)
+06:10:44   Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:44   Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:10:44   Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:10:44   Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:10:44 stdout_lines:
+06:10:44 - 'WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11'
+06:10:44 - Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:10:44 - Name                     IBM WebSphere Application Server - ND
+06:10:44 - Version                  7.0.0.43
+06:10:44 - Architecture             AMD (64 bit)
+06:10:44 - Name                     IBM WebSphere eXtreme Scale
+06:10:44 - Version                  8.6.0.7
+06:10:44 - Architecture             AMD (64 bit)
+06:10:44 - Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:44 - Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:10:44 - Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:10:44 - Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:10:44 warnings: []
+06:10:44 
+06:10:44 changed: [p120663vaps2367] => 
+06:10:44 changed: true
+06:10:44 cmd: cd /apps/IBM/Websphere/ws70/bin && ./versionInfo.sh -maintenancePackages | egrep
+06:10:44   -e Name -e Version -e Architecture -e 7.0.0-WS-WAS-LinuxX64-FP0000043 -e 7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:44   -e 7.0.0.43-WS-WAS-IFPI78148 -e DYNACACHE
+06:10:44 delta: '0:00:03.028309'
+06:10:44 end: '2017-07-06 06:15:02.501572'
+06:10:44 rc: 0
+06:10:44 start: '2017-07-06 06:14:59.473263'
+06:10:44 stderr: ''
+06:10:44 stdout: |-
+06:10:44   WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11
+06:10:44   Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:10:44   Name                     IBM WebSphere Application Server - ND
+06:10:44   Version                  7.0.0.43
+06:10:44   Architecture             AMD (64 bit)
+06:10:44   Name                     IBM WebSphere eXtreme Scale
+06:10:44   Version                  8.6.0.7
+06:10:44   Architecture             AMD (64 bit)
+06:10:44   Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:44   Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:10:44   Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:10:44   Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:10:44 stdout_lines:
+06:10:44 - 'WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11'
+06:10:44 - Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:10:44 - Name                     IBM WebSphere Application Server - ND
+06:10:44 - Version                  7.0.0.43
+06:10:44 - Architecture             AMD (64 bit)
+06:10:44 - Name                     IBM WebSphere eXtreme Scale
+06:10:44 - Version                  8.6.0.7
+06:10:44 - Architecture             AMD (64 bit)
+06:10:44 - Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:44 - Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:10:44 - Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:10:44 - Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:10:44 warnings: []
+06:10:44 
+06:10:44 changed: [p120663vaps2481] => 
+06:10:44 changed: true
+06:10:44 cmd: cd /apps/IBM/Websphere/ws70/bin && ./versionInfo.sh -maintenancePackages | egrep
+06:10:44   -e Name -e Version -e Architecture -e 7.0.0-WS-WAS-LinuxX64-FP0000043 -e 7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:44   -e 7.0.0.43-WS-WAS-IFPI78148 -e DYNACACHE
+06:10:44 delta: '0:00:03.244981'
+06:10:44 end: '2017-07-06 06:15:02.629233'
+06:10:44 rc: 0
+06:10:44 start: '2017-07-06 06:14:59.384252'
+06:10:44 stderr: ''
+06:10:44 stdout: |-
+06:10:44   WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11
+06:10:44   Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:10:44   Name                     IBM WebSphere Application Server - ND
+06:10:44   Version                  7.0.0.43
+06:10:44   Architecture             AMD (64 bit)
+06:10:44   Name                     IBM WebSphere eXtreme Scale
+06:10:44   Version                  8.6.0.7
+06:10:44   Architecture             AMD (64 bit)
+06:10:44   Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:44   Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:10:44   Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:10:44   Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:10:44 stdout_lines:
+06:10:44 - 'WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11'
+06:10:44 - Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:10:44 - Name                     IBM WebSphere Application Server - ND
+06:10:44 - Version                  7.0.0.43
+06:10:44 - Architecture             AMD (64 bit)
+06:10:44 - Name                     IBM WebSphere eXtreme Scale
+06:10:44 - Version                  8.6.0.7
+06:10:44 - Architecture             AMD (64 bit)
+06:10:44 - Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:44 - Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:10:44 - Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:10:44 - Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:10:44 warnings: []
+06:10:44 
+06:10:46 changed: [p120663vaps2482] => 
+06:10:46 changed: true
+06:10:46 cmd: cd /apps/IBM/Websphere/ws70/bin && ./versionInfo.sh -maintenancePackages | egrep
+06:10:46   -e Name -e Version -e Architecture -e 7.0.0-WS-WAS-LinuxX64-FP0000043 -e 7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:46   -e 7.0.0.43-WS-WAS-IFPI78148 -e DYNACACHE
+06:10:46 delta: '0:00:03.487708'
+06:10:46 end: '2017-07-06 06:15:03.642442'
+06:10:46 rc: 0
+06:10:46 start: '2017-07-06 06:15:00.154734'
+06:10:46 stderr: ''
+06:10:46 stdout: |-
+06:10:46   WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11
+06:10:46   Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:10:46   Name                     IBM WebSphere Application Server - ND
+06:10:46   Version                  7.0.0.43
+06:10:46   Architecture             AMD (64 bit)
+06:10:46   Name                     IBM WebSphere eXtreme Scale
+06:10:46   Version                  8.6.0.7
+06:10:46   Architecture             AMD (64 bit)
+06:10:46   Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:46   Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:10:46   Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:10:46   Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:10:46 stdout_lines:
+06:10:46 - 'WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11'
+06:10:46 - Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:10:46 - Name                     IBM WebSphere Application Server - ND
+06:10:46 - Version                  7.0.0.43
+06:10:46 - Architecture             AMD (64 bit)
+06:10:46 - Name                     IBM WebSphere eXtreme Scale
+06:10:46 - Version                  8.6.0.7
+06:10:46 - Architecture             AMD (64 bit)
+06:10:46 - Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:46 - Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:10:46 - Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:10:46 - Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:10:46 warnings: []
+06:10:46 
+06:10:46 changed: [p120663vaps2366] => 
+06:10:46 changed: true
+06:10:46 cmd: cd /apps/IBM/Websphere/ws70/bin && ./versionInfo.sh -maintenancePackages | egrep
+06:10:46   -e Name -e Version -e Architecture -e 7.0.0-WS-WAS-LinuxX64-FP0000043 -e 7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:46   -e 7.0.0.43-WS-WAS-IFPI78148 -e DYNACACHE
+06:10:46 delta: '0:00:03.705723'
+06:10:46 end: '2017-07-06 06:15:03.574348'
+06:10:46 rc: 0
+06:10:46 start: '2017-07-06 06:14:59.868625'
+06:10:46 stderr: ''
+06:10:46 stdout: |-
+06:10:46   WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11
+06:10:46   Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:10:46   Name                     IBM WebSphere Application Server - ND
+06:10:46   Version                  7.0.0.43
+06:10:46   Architecture             AMD (64 bit)
+06:10:46   Name                     IBM WebSphere eXtreme Scale
+06:10:46   Version                  8.6.0.7
+06:10:46   Architecture             AMD (64 bit)
+06:10:46   Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:46   Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:10:46   Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:10:46   Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:10:46 stdout_lines:
+06:10:46 - 'WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11'
+06:10:46 - Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:10:46 - Name                     IBM WebSphere Application Server - ND
+06:10:46 - Version                  7.0.0.43
+06:10:46 - Architecture             AMD (64 bit)
+06:10:46 - Name                     IBM WebSphere eXtreme Scale
+06:10:46 - Version                  8.6.0.7
+06:10:46 - Architecture             AMD (64 bit)
+06:10:46 - Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:46 - Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:10:46 - Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:10:46 - Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:10:46 warnings: []
+06:10:46 
+06:10:46 changed: [p120663vaps2483] => 
+06:10:46 changed: true
+06:10:46 cmd: cd /apps/IBM/Websphere/ws70/bin && ./versionInfo.sh -maintenancePackages | egrep
+06:10:46   -e Name -e Version -e Architecture -e 7.0.0-WS-WAS-LinuxX64-FP0000043 -e 7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:46   -e 7.0.0.43-WS-WAS-IFPI78148 -e DYNACACHE
+06:10:46 delta: '0:00:04.889187'
+06:10:46 end: '2017-07-06 06:15:04.445730'
+06:10:46 rc: 0
+06:10:46 start: '2017-07-06 06:14:59.556543'
+06:10:46 stderr: ''
+06:10:46 stdout: |-
+06:10:46   WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11
+06:10:46   Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:10:46   Name                     IBM WebSphere Application Server - ND
+06:10:46   Version                  7.0.0.43
+06:10:46   Architecture             AMD (64 bit)
+06:10:46   Name                     IBM WebSphere eXtreme Scale
+06:10:46   Version                  8.6.0.7
+06:10:46   Architecture             AMD (64 bit)
+06:10:46   Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:46   Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:10:46   Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:10:46   Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:10:46 stdout_lines:
+06:10:46 - 'WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11'
+06:10:46 - Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:10:46 - Name                     IBM WebSphere Application Server - ND
+06:10:46 - Version                  7.0.0.43
+06:10:46 - Architecture             AMD (64 bit)
+06:10:46 - Name                     IBM WebSphere eXtreme Scale
+06:10:46 - Version                  8.6.0.7
+06:10:46 - Architecture             AMD (64 bit)
+06:10:46 - Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:46 - Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:10:46 - Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:10:46 - Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:10:46 warnings: []
+06:10:46 
+06:10:47 changed: [p120663vaps2480] => 
+06:10:47 changed: true
+06:10:47 cmd: cd /apps/IBM/Websphere/ws70/bin && ./versionInfo.sh -maintenancePackages | egrep
+06:10:47   -e Name -e Version -e Architecture -e 7.0.0-WS-WAS-LinuxX64-FP0000043 -e 7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:47   -e 7.0.0.43-WS-WAS-IFPI78148 -e DYNACACHE
+06:10:47 delta: '0:00:05.691529'
+06:10:47 end: '2017-07-06 06:15:05.211649'
+06:10:47 rc: 0
+06:10:47 start: '2017-07-06 06:14:59.520120'
+06:10:47 stderr: ''
+06:10:47 stdout: |-
+06:10:47   WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11
+06:10:47   Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:10:47   Name                     IBM WebSphere Application Server - ND
+06:10:47   Version                  7.0.0.43
+06:10:47   Architecture             AMD (64 bit)
+06:10:47   Name                     IBM WebSphere eXtreme Scale
+06:10:47   Version                  8.6.0.7
+06:10:47   Architecture             AMD (64 bit)
+06:10:47   Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:47   Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:10:47   Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:10:47   Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:10:47 stdout_lines:
+06:10:47 - 'WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11'
+06:10:47 - Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:10:47 - Name                     IBM WebSphere Application Server - ND
+06:10:47 - Version                  7.0.0.43
+06:10:47 - Architecture             AMD (64 bit)
+06:10:47 - Name                     IBM WebSphere eXtreme Scale
+06:10:47 - Version                  8.6.0.7
+06:10:47 - Architecture             AMD (64 bit)
+06:10:47 - Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:47 - Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:10:47 - Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:10:47 - Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:10:47 warnings: []
+06:10:47 
+06:10:49 changed: [p120663vaps2377] => 
+06:10:49 changed: true
+06:10:49 cmd: cd /apps/IBM/Websphere/ws70/bin && ./versionInfo.sh -maintenancePackages | egrep
+06:10:49   -e Name -e Version -e Architecture -e 7.0.0-WS-WAS-LinuxX64-FP0000043 -e 7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:49   -e 7.0.0.43-WS-WAS-IFPI78148 -e DYNACACHE
+06:10:49 delta: '0:00:06.158059'
+06:10:49 end: '2017-07-06 06:15:06.257638'
+06:10:49 rc: 0
+06:10:49 start: '2017-07-06 06:15:00.099579'
+06:10:49 stderr: ''
+06:10:49 stdout: |-
+06:10:49   WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11
+06:10:49   Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:10:49   Name                     IBM WebSphere Application Server - ND
+06:10:49   Version                  7.0.0.43
+06:10:49   Architecture             AMD (64 bit)
+06:10:49   Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:49   Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:10:49   Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:10:49   Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:10:49 stdout_lines:
+06:10:49 - 'WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11'
+06:10:49 - Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:10:49 - Name                     IBM WebSphere Application Server - ND
+06:10:49 - Version                  7.0.0.43
+06:10:49 - Architecture             AMD (64 bit)
+06:10:49 - Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:49 - Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:10:49 - Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:10:49 - Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:10:49 warnings: []
+06:10:49 
+06:10:50 changed: [p120663vaps2484] => 
+06:10:50 changed: true
+06:10:50 cmd: cd /apps/IBM/Websphere/ws70/bin && ./versionInfo.sh -maintenancePackages | egrep
+06:10:50   -e Name -e Version -e Architecture -e 7.0.0-WS-WAS-LinuxX64-FP0000043 -e 7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:50   -e 7.0.0.43-WS-WAS-IFPI78148 -e DYNACACHE
+06:10:50 delta: '0:00:07.715003'
+06:10:50 end: '2017-07-06 06:15:06.922216'
+06:10:50 rc: 0
+06:10:50 start: '2017-07-06 06:14:59.207213'
+06:10:50 stderr: ''
+06:10:50 stdout: |-
+06:10:50   WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11
+06:10:50   Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:10:50   Name                     IBM WebSphere Application Server - ND
+06:10:50   Version                  7.0.0.43
+06:10:50   Architecture             AMD (64 bit)
+06:10:50   Name                     IBM WebSphere eXtreme Scale
+06:10:50   Version                  8.6.0.7
+06:10:50   Architecture             AMD (64 bit)
+06:10:50   Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:50   Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:10:50   Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:10:50   Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:10:50 stdout_lines:
+06:10:50 - 'WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11'
+06:10:50 - Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:10:50 - Name                     IBM WebSphere Application Server - ND
+06:10:50 - Version                  7.0.0.43
+06:10:50 - Architecture             AMD (64 bit)
+06:10:50 - Name                     IBM WebSphere eXtreme Scale
+06:10:50 - Version                  8.6.0.7
+06:10:50 - Architecture             AMD (64 bit)
+06:10:50 - Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:10:50 - Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:10:50 - Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:10:50 - Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:10:50 warnings: []
+06:10:50 
+06:10:50 
+06:10:50 TASK [ws-version-info : Validate if the wxs packages are installed] ************
+06:10:51 task path: /home/ansible/ansible_scripts/v2.419.pr201/roles/ws-version-info/tasks/main.yml:25
+06:10:56 changed: [p120663vaps2367] => 
+06:10:56 changed: true
+06:10:56 cmd: /apps/IBM/Websphere/im/eclipse/tools/imcl listInstalledPackages -dataLocation
+06:10:56   /home/wasadmin/var/ibm/InstallationManager -features -long
+06:10:56 delta: '0:00:04.144858'
+06:10:56 end: '2017-07-06 06:15:13.681576'
+06:10:56 rc: 0
+06:10:56 start: '2017-07-06 06:15:09.536718'
+06:10:56 stderr: ''
+06:10:56 stdout: "/apps/IBM/Websphere/im/eclipse : com.ibm.cic.agent_1.6.0.20120831_1216 :\
+06:10:56   \ IBM\xAE Installation Manager : 1.6.0 :\n/apps/IBM/Websphere/ws70 : com.ibm.websphere.ND.v70_7.0.43.20170324_0719\
+06:10:56   \ : IBM WebSphere Application Server - ND : 7.0.0.43 : consoleLanguagesSupport.feature,runtimeLanguagesSupport.feature\n\
+06:10:56   /apps/IBM/Websphere/ws70 : com.ibm.websphere.WXSCLIENT.was7.v86_8.6.7.20150319_1407\
+06:10:56   \ : IBM WebSphere eXtreme Scale Client for WebSphere Application Server V7 : 8.6.0.7\
+06:10:56   \ : xs.console.feature"
+06:10:56 stdout_lines:
+06:10:56 - "/apps/IBM/Websphere/im/eclipse : com.ibm.cic.agent_1.6.0.20120831_1216 : IBM\xAE\
+06:10:56   \ Installation Manager : 1.6.0 : "
+06:10:56 - '/apps/IBM/Websphere/ws70 : com.ibm.websphere.ND.v70_7.0.43.20170324_0719 : IBM
+06:10:56   WebSphere Application Server - ND : 7.0.0.43 : consoleLanguagesSupport.feature,runtimeLanguagesSupport.feature'
+06:10:56 - '/apps/IBM/Websphere/ws70 : com.ibm.websphere.WXSCLIENT.was7.v86_8.6.7.20150319_1407
+06:10:56   : IBM WebSphere eXtreme Scale Client for WebSphere Application Server V7 : 8.6.0.7
+06:10:56   : xs.console.feature'
+06:10:56 warnings: []
+06:10:56 
+06:10:56 changed: [p120663vaps2366] => 
+06:10:56 changed: true
+06:10:56 cmd: /apps/IBM/Websphere/im/eclipse/tools/imcl listInstalledPackages -dataLocation
+06:10:56   /home/wasadmin/var/ibm/InstallationManager -features -long
+06:10:56 delta: '0:00:04.186954'
+06:10:56 end: '2017-07-06 06:15:14.192999'
+06:10:56 rc: 0
+06:10:56 start: '2017-07-06 06:15:10.006045'
+06:10:56 stderr: ''
+06:10:56 stdout: "/apps/IBM/Websphere/im/eclipse : com.ibm.cic.agent_1.6.0.20120831_1216 :\
+06:10:56   \ IBM\xAE Installation Manager : 1.6.0 :\n/apps/IBM/Websphere/ws70 : com.ibm.websphere.ND.v70_7.0.43.20170324_0719\
+06:10:56   \ : IBM WebSphere Application Server - ND : 7.0.0.43 : consoleLanguagesSupport.feature,runtimeLanguagesSupport.feature\n\
+06:10:56   /apps/IBM/Websphere/ws70 : com.ibm.websphere.WXSCLIENT.was7.v86_8.6.7.20150319_1407\
+06:10:56   \ : IBM WebSphere eXtreme Scale Client for WebSphere Application Server V7 : 8.6.0.7\
+06:10:56   \ : xs.console.feature"
+06:10:56 stdout_lines:
+06:10:56 - "/apps/IBM/Websphere/im/eclipse : com.ibm.cic.agent_1.6.0.20120831_1216 : IBM\xAE\
+06:10:56   \ Installation Manager : 1.6.0 : "
+06:10:56 - '/apps/IBM/Websphere/ws70 : com.ibm.websphere.ND.v70_7.0.43.20170324_0719 : IBM
+06:10:56   WebSphere Application Server - ND : 7.0.0.43 : consoleLanguagesSupport.feature,runtimeLanguagesSupport.feature'
+06:10:56 - '/apps/IBM/Websphere/ws70 : com.ibm.websphere.WXSCLIENT.was7.v86_8.6.7.20150319_1407
+06:10:56   : IBM WebSphere eXtreme Scale Client for WebSphere Application Server V7 : 8.6.0.7
+06:10:56   : xs.console.feature'
+06:10:56 warnings: []
+06:10:56 
+06:10:57 changed: [p120663vaps2482] => 
+06:10:57 changed: true
+06:10:57 cmd: /apps/IBM/Websphere/im/eclipse/tools/imcl listInstalledPackages -dataLocation
+06:10:57   /home/wasadmin/var/ibm/InstallationManager -features -long
+06:10:57 delta: '0:00:04.447405'
+06:10:57 end: '2017-07-06 06:15:14.343081'
+06:10:57 rc: 0
+06:10:57 start: '2017-07-06 06:15:09.895676'
+06:10:57 stderr: ''
+06:10:57 stdout: "/apps/IBM/Websphere/im/eclipse : com.ibm.cic.agent_1.6.0.20120831_1216 :\
+06:10:57   \ IBM\xAE Installation Manager : 1.6.0 :\n/apps/IBM/Websphere/ws70 : com.ibm.websphere.ND.v70_7.0.43.20170324_0719\
+06:10:57   \ : IBM WebSphere Application Server - ND : 7.0.0.43 : consoleLanguagesSupport.feature,runtimeLanguagesSupport.feature\n\
+06:10:57   /apps/IBM/Websphere/ws70 : com.ibm.websphere.WXSCLIENT.was7.v86_8.6.7.20150319_1407\
+06:10:57   \ : IBM WebSphere eXtreme Scale Client for WebSphere Application Server V7 : 8.6.0.7\
+06:10:57   \ : xs.console.feature"
+06:10:57 stdout_lines:
+06:10:57 - "/apps/IBM/Websphere/im/eclipse : com.ibm.cic.agent_1.6.0.20120831_1216 : IBM\xAE\
+06:10:57   \ Installation Manager : 1.6.0 : "
+06:10:57 - '/apps/IBM/Websphere/ws70 : com.ibm.websphere.ND.v70_7.0.43.20170324_0719 : IBM
+06:10:57   WebSphere Application Server - ND : 7.0.0.43 : consoleLanguagesSupport.feature,runtimeLanguagesSupport.feature'
+06:10:57 - '/apps/IBM/Websphere/ws70 : com.ibm.websphere.WXSCLIENT.was7.v86_8.6.7.20150319_1407
+06:10:57   : IBM WebSphere eXtreme Scale Client for WebSphere Application Server V7 : 8.6.0.7
+06:10:57   : xs.console.feature'
+06:10:57 warnings: []
+06:10:57 
+06:10:57 changed: [p120663vaps2481] => 
+06:10:57 changed: true
+06:10:57 cmd: /apps/IBM/Websphere/im/eclipse/tools/imcl listInstalledPackages -dataLocation
+06:10:57   /home/wasadmin/var/ibm/InstallationManager -features -long
+06:10:57 delta: '0:00:04.245118'
+06:10:57 end: '2017-07-06 06:15:14.477612'
+06:10:57 rc: 0
+06:10:57 start: '2017-07-06 06:15:10.232494'
+06:10:57 stderr: ''
+06:10:57 stdout: "/apps/IBM/Websphere/im/eclipse : com.ibm.cic.agent_1.6.0.20120831_1216 :\
+06:10:57   \ IBM\xAE Installation Manager : 1.6.0 :\n/apps/IBM/Websphere/ws70 : com.ibm.websphere.ND.v70_7.0.43.20170324_0719\
+06:10:57   \ : IBM WebSphere Application Server - ND : 7.0.0.43 : consoleLanguagesSupport.feature,runtimeLanguagesSupport.feature\n\
+06:10:57   /apps/IBM/Websphere/ws70 : com.ibm.websphere.WXSCLIENT.was7.v86_8.6.7.20150319_1407\
+06:10:57   \ : IBM WebSphere eXtreme Scale Client for WebSphere Application Server V7 : 8.6.0.7\
+06:10:57   \ : xs.console.feature"
+06:10:57 stdout_lines:
+06:10:57 - "/apps/IBM/Websphere/im/eclipse : com.ibm.cic.agent_1.6.0.20120831_1216 : IBM\xAE\
+06:10:57   \ Installation Manager : 1.6.0 : "
+06:10:57 - '/apps/IBM/Websphere/ws70 : com.ibm.websphere.ND.v70_7.0.43.20170324_0719 : IBM
+06:10:57   WebSphere Application Server - ND : 7.0.0.43 : consoleLanguagesSupport.feature,runtimeLanguagesSupport.feature'
+06:10:57 - '/apps/IBM/Websphere/ws70 : com.ibm.websphere.WXSCLIENT.was7.v86_8.6.7.20150319_1407
+06:10:57   : IBM WebSphere eXtreme Scale Client for WebSphere Application Server V7 : 8.6.0.7
+06:10:57   : xs.console.feature'
+06:10:57 warnings: []
+06:10:57 
+06:10:58 changed: [p120663vaps2479] => 
+06:10:58 changed: true
+06:10:58 cmd: /apps/IBM/Websphere/im/eclipse/tools/imcl listInstalledPackages -dataLocation
+06:10:58   /home/wasadmin/var/ibm/InstallationManager -features -long
+06:10:58 delta: '0:00:04.412243'
+06:10:58 end: '2017-07-06 06:15:14.811156'
+06:10:58 rc: 0
+06:10:58 start: '2017-07-06 06:15:10.398913'
+06:10:58 stderr: ''
+06:10:58 stdout: "/apps/IBM/Websphere/im/eclipse : com.ibm.cic.agent_1.6.0.20120831_1216 :\
+06:10:58   \ IBM\xAE Installation Manager : 1.6.0 :\n/apps/IBM/Websphere/ws70 : com.ibm.websphere.ND.v70_7.0.43.20170324_0719\
+06:10:58   \ : IBM WebSphere Application Server - ND : 7.0.0.43 : consoleLanguagesSupport.feature,runtimeLanguagesSupport.feature\n\
+06:10:58   /apps/IBM/Websphere/ws70 : com.ibm.websphere.WXSCLIENT.was7.v86_8.6.7.20150319_1407\
+06:10:58   \ : IBM WebSphere eXtreme Scale Client for WebSphere Application Server V7 : 8.6.0.7\
+06:10:58   \ : xs.console.feature"
+06:10:58 stdout_lines:
+06:10:58 - "/apps/IBM/Websphere/im/eclipse : com.ibm.cic.agent_1.6.0.20120831_1216 : IBM\xAE\
+06:10:58   \ Installation Manager : 1.6.0 : "
+06:10:58 - '/apps/IBM/Websphere/ws70 : com.ibm.websphere.ND.v70_7.0.43.20170324_0719 : IBM
+06:10:58   WebSphere Application Server - ND : 7.0.0.43 : consoleLanguagesSupport.feature,runtimeLanguagesSupport.feature'
+06:10:58 - '/apps/IBM/Websphere/ws70 : com.ibm.websphere.WXSCLIENT.was7.v86_8.6.7.20150319_1407
+06:10:58   : IBM WebSphere eXtreme Scale Client for WebSphere Application Server V7 : 8.6.0.7
+06:10:58   : xs.console.feature'
+06:10:58 warnings: []
+06:10:58 
+06:10:59 changed: [p120663vaps2483] => 
+06:10:59 changed: true
+06:10:59 cmd: /apps/IBM/Websphere/im/eclipse/tools/imcl listInstalledPackages -dataLocation
+06:10:59   /home/wasadmin/var/ibm/InstallationManager -features -long
+06:10:59 delta: '0:00:05.593773'
+06:10:59 end: '2017-07-06 06:15:15.989370'
+06:10:59 rc: 0
+06:10:59 start: '2017-07-06 06:15:10.395597'
+06:10:59 stderr: ''
+06:10:59 stdout: "/apps/IBM/Websphere/im/eclipse : com.ibm.cic.agent_1.6.0.20120831_1216 :\
+06:10:59   \ IBM\xAE Installation Manager : 1.6.0 :\n/apps/IBM/Websphere/ws70 : com.ibm.websphere.ND.v70_7.0.43.20170324_0719\
+06:10:59   \ : IBM WebSphere Application Server - ND : 7.0.0.43 : consoleLanguagesSupport.feature,runtimeLanguagesSupport.feature\n\
+06:10:59   /apps/IBM/Websphere/ws70 : com.ibm.websphere.WXSCLIENT.was7.v86_8.6.7.20150319_1407\
+06:10:59   \ : IBM WebSphere eXtreme Scale Client for WebSphere Application Server V7 : 8.6.0.7\
+06:10:59   \ : xs.console.feature"
+06:10:59 stdout_lines:
+06:10:59 - "/apps/IBM/Websphere/im/eclipse : com.ibm.cic.agent_1.6.0.20120831_1216 : IBM\xAE\
+06:10:59   \ Installation Manager : 1.6.0 : "
+06:10:59 - '/apps/IBM/Websphere/ws70 : com.ibm.websphere.ND.v70_7.0.43.20170324_0719 : IBM
+06:10:59   WebSphere Application Server - ND : 7.0.0.43 : consoleLanguagesSupport.feature,runtimeLanguagesSupport.feature'
+06:10:59 - '/apps/IBM/Websphere/ws70 : com.ibm.websphere.WXSCLIENT.was7.v86_8.6.7.20150319_1407
+06:10:59   : IBM WebSphere eXtreme Scale Client for WebSphere Application Server V7 : 8.6.0.7
+06:10:59   : xs.console.feature'
+06:10:59 warnings: []
+06:10:59 
+06:10:59 changed: [p120663vaps2484] => 
+06:10:59 changed: true
+06:10:59 cmd: /apps/IBM/Websphere/im/eclipse/tools/imcl listInstalledPackages -dataLocation
+06:10:59   /home/wasadmin/var/ibm/InstallationManager -features -long
+06:10:59 delta: '0:00:05.780519'
+06:10:59 end: '2017-07-06 06:15:16.246570'
+06:10:59 rc: 0
+06:10:59 start: '2017-07-06 06:15:10.466051'
+06:10:59 stderr: ''
+06:10:59 stdout: "/apps/IBM/Websphere/im/eclipse : com.ibm.cic.agent_1.6.0.20120831_1216 :\
+06:10:59   \ IBM\xAE Installation Manager : 1.6.0 :\n/apps/IBM/Websphere/ws70 : com.ibm.websphere.ND.v70_7.0.43.20170324_0719\
+06:10:59   \ : IBM WebSphere Application Server - ND : 7.0.0.43 : consoleLanguagesSupport.feature,runtimeLanguagesSupport.feature\n\
+06:10:59   /apps/IBM/Websphere/ws70 : com.ibm.websphere.WXSCLIENT.was7.v86_8.6.7.20150319_1407\
+06:10:59   \ : IBM WebSphere eXtreme Scale Client for WebSphere Application Server V7 : 8.6.0.7\
+06:10:59   \ : xs.console.feature"
+06:10:59 stdout_lines:
+06:10:59 - "/apps/IBM/Websphere/im/eclipse : com.ibm.cic.agent_1.6.0.20120831_1216 : IBM\xAE\
+06:10:59   \ Installation Manager : 1.6.0 : "
+06:10:59 - '/apps/IBM/Websphere/ws70 : com.ibm.websphere.ND.v70_7.0.43.20170324_0719 : IBM
+06:10:59   WebSphere Application Server - ND : 7.0.0.43 : consoleLanguagesSupport.feature,runtimeLanguagesSupport.feature'
+06:10:59 - '/apps/IBM/Websphere/ws70 : com.ibm.websphere.WXSCLIENT.was7.v86_8.6.7.20150319_1407
+06:10:59   : IBM WebSphere eXtreme Scale Client for WebSphere Application Server V7 : 8.6.0.7
+06:10:59   : xs.console.feature'
+06:10:59 warnings: []
+06:10:59 
+06:10:59 changed: [p120663vaps2480] => 
+06:10:59 changed: true
+06:10:59 cmd: /apps/IBM/Websphere/im/eclipse/tools/imcl listInstalledPackages -dataLocation
+06:10:59   /home/wasadmin/var/ibm/InstallationManager -features -long
+06:10:59 delta: '0:00:06.566834'
+06:10:59 end: '2017-07-06 06:15:16.827618'
+06:10:59 rc: 0
+06:10:59 start: '2017-07-06 06:15:10.260784'
+06:10:59 stderr: ''
+06:10:59 stdout: "/apps/IBM/Websphere/im/eclipse : com.ibm.cic.agent_1.6.0.20120831_1216 :\
+06:10:59   \ IBM\xAE Installation Manager : 1.6.0 :\n/apps/IBM/Websphere/ws70 : com.ibm.websphere.ND.v70_7.0.43.20170324_0719\
+06:10:59   \ : IBM WebSphere Application Server - ND : 7.0.0.43 : consoleLanguagesSupport.feature,runtimeLanguagesSupport.feature\n\
+06:10:59   /apps/IBM/Websphere/ws70 : com.ibm.websphere.WXSCLIENT.was7.v86_8.6.7.20150319_1407\
+06:10:59   \ : IBM WebSphere eXtreme Scale Client for WebSphere Application Server V7 : 8.6.0.7\
+06:10:59   \ : xs.console.feature"
+06:10:59 stdout_lines:
+06:10:59 - "/apps/IBM/Websphere/im/eclipse : com.ibm.cic.agent_1.6.0.20120831_1216 : IBM\xAE\
+06:10:59   \ Installation Manager : 1.6.0 : "
+06:10:59 - '/apps/IBM/Websphere/ws70 : com.ibm.websphere.ND.v70_7.0.43.20170324_0719 : IBM
+06:10:59   WebSphere Application Server - ND : 7.0.0.43 : consoleLanguagesSupport.feature,runtimeLanguagesSupport.feature'
+06:10:59 - '/apps/IBM/Websphere/ws70 : com.ibm.websphere.WXSCLIENT.was7.v86_8.6.7.20150319_1407
+06:10:59   : IBM WebSphere eXtreme Scale Client for WebSphere Application Server V7 : 8.6.0.7
+06:10:59   : xs.console.feature'
+06:10:59 warnings: []
+06:10:59 
+06:11:03 fatal: [p120663vaps2377]: FAILED! => 
+06:11:03 changed: true
+06:11:03 cmd: /apps/IBM/Websphere/im/eclipse/tools/imcl listInstalledPackages -dataLocation
+06:11:03   /home/wasadmin/var/ibm/InstallationManager -features -long
+06:11:03 delta: '0:00:10.322467'
+06:11:03 end: '2017-07-06 06:15:21.388419'
+06:11:03 failed: true
+06:11:03 rc: 1
+06:11:03 start: '2017-07-06 06:15:11.065952'
+06:11:03 stderr: |-
+06:11:03   ERROR: The Installation Manager cannot be started.The registry information does not exist or does not match with this executable.This may happen if you are trying to run Installation Manager installed by another user.
+06:11:03 
+06:11:03   00:03.09 ERROR [main] com.ibm.cic.agent.internal.application.HeadlessApplication run
+06:11:03     The Installation Manager cannot be started.The registry information does not exist or does not match with this executable.This may happen if you are trying to run Installation Manager installed by another user.
+06:11:03 stdout: ''
+06:11:03 stdout_lines: []
+06:11:03 warnings: []
+06:11:03 
+06:11:03 ...ignoring
+06:11:03 
+06:11:03 TASK [ws-version-info : Read permission to logs] *******************************
+06:11:04 task path: /home/ansible/ansible_scripts/v2.419.pr201/roles/ws-version-info/tasks/main.yml:31
+06:11:06 changed: [p120663vaps2481] => 
+06:11:06 changed: true
+06:11:06 cmd: chmod -R 755 /mslogs/deploy-logs/1499317690
+06:11:06 delta: '0:00:00.013248'
+06:11:06 end: '2017-07-06 06:15:24.733635'
+06:11:06 rc: 0
+06:11:06 start: '2017-07-06 06:15:24.720387'
+06:11:06 stderr: ''
+06:11:06 stdout: ''
+06:11:06 stdout_lines: []
+06:11:06 warnings:
+06:11:06 - Consider using file module with mode rather than running chmod
+06:11:06 
+06:11:07 changed: [p120663vaps2479] => 
+06:11:07 changed: true
+06:11:07 cmd: chmod -R 755 /mslogs/deploy-logs/1499317690
+06:11:07 delta: '0:00:00.013531'
+06:11:07 end: '2017-07-06 06:15:24.838821'
+06:11:07 rc: 0
+06:11:07 start: '2017-07-06 06:15:24.825290'
+06:11:07 stderr: ''
+06:11:07 stdout: ''
+06:11:07 stdout_lines: []
+06:11:07 warnings:
+06:11:07 - Consider using file module with mode rather than running chmod
+06:11:07 
+06:11:07 changed: [p120663vaps2367] => 
+06:11:07 changed: true
+06:11:07 cmd: chmod -R 755 /mslogs/deploy-logs/1499317690
+06:11:07 delta: '0:00:00.010255'
+06:11:07 end: '2017-07-06 06:15:24.892303'
+06:11:07 rc: 0
+06:11:07 start: '2017-07-06 06:15:24.882048'
+06:11:07 stderr: ''
+06:11:07 stdout: ''
+06:11:07 stdout_lines: []
+06:11:07 warnings:
+06:11:07 - Consider using file module with mode rather than running chmod
+06:11:07 
+06:11:08 changed: [p120663vaps2482] => 
+06:11:08 changed: true
+06:11:08 cmd: chmod -R 755 /mslogs/deploy-logs/1499317690
+06:11:08 delta: '0:00:00.016404'
+06:11:08 end: '2017-07-06 06:15:25.029765'
+06:11:08 rc: 0
+06:11:08 start: '2017-07-06 06:15:25.013361'
+06:11:08 stderr: ''
+06:11:08 stdout: ''
+06:11:08 stdout_lines: []
+06:11:08 warnings:
+06:11:08 - Consider using file module with mode rather than running chmod
+06:11:08 
+06:11:08 changed: [p120663vaps2366] => 
+06:11:08 changed: true
+06:11:08 cmd: chmod -R 755 /mslogs/deploy-logs/1499317690
+06:11:08 delta: '0:00:01.013856'
+06:11:08 end: '2017-07-06 06:15:25.247097'
+06:11:08 rc: 0
+06:11:08 start: '2017-07-06 06:15:24.233241'
+06:11:08 stderr: ''
+06:11:08 stdout: ''
+06:11:08 stdout_lines: []
+06:11:08 warnings:
+06:11:08 - Consider using file module with mode rather than running chmod
+06:11:08 
+06:11:09 changed: [p120663vaps2480] => 
+06:11:09 changed: true
+06:11:09 cmd: chmod -R 755 /mslogs/deploy-logs/1499317690
+06:11:09 delta: '0:00:00.015708'
+06:11:09 end: '2017-07-06 06:15:25.226325'
+06:11:09 rc: 0
+06:11:09 start: '2017-07-06 06:15:25.210617'
+06:11:09 stderr: ''
+06:11:09 stdout: ''
+06:11:09 stdout_lines: []
+06:11:09 warnings:
+06:11:09 - Consider using file module with mode rather than running chmod
+06:11:09 
+06:11:09 changed: [p120663vaps2377] => 
+06:11:09 changed: true
+06:11:09 cmd: chmod -R 755 /mslogs/deploy-logs/1499317690
+06:11:09 delta: '0:00:00.022720'
+06:11:09 end: '2017-07-06 06:15:25.240274'
+06:11:09 rc: 0
+06:11:09 start: '2017-07-06 06:15:25.217554'
+06:11:09 stderr: ''
+06:11:09 stdout: ''
+06:11:09 stdout_lines: []
+06:11:09 warnings:
+06:11:09 - Consider using file module with mode rather than running chmod
+06:11:09 
+06:11:10 changed: [p120663vaps2484] => 
+06:11:10 changed: true
+06:11:10 cmd: chmod -R 755 /mslogs/deploy-logs/1499317690
+06:11:10 delta: '0:00:00.014074'
+06:11:10 end: '2017-07-06 06:15:25.523455'
+06:11:10 rc: 0
+06:11:10 start: '2017-07-06 06:15:25.509381'
+06:11:10 stderr: ''
+06:11:10 stdout: ''
+06:11:10 stdout_lines: []
+06:11:10 warnings:
+06:11:10 - Consider using file module with mode rather than running chmod
+06:11:10 
+06:11:10 changed: [p120663vaps2483] => 
+06:11:10 changed: true
+06:11:10 cmd: chmod -R 755 /mslogs/deploy-logs/1499317690
+06:11:10 delta: '0:00:00.013968'
+06:11:10 end: '2017-07-06 06:15:25.580455'
+06:11:10 rc: 0
+06:11:10 start: '2017-07-06 06:15:25.566487'
+06:11:10 stderr: ''
+06:11:10 stdout: ''
+06:11:10 stdout_lines: []
+06:11:10 warnings:
+06:11:10 - Consider using file module with mode rather than running chmod
+06:11:10 
+06:11:10 
+06:11:10 PLAY [version info in dmgr] ****************************************************
+06:11:10 
+06:11:10 TASK [setup] *******************************************************************
+06:11:12 ok: [p120663vaps5051]
+06:11:12 ok: [p120663vaps2478]
+06:11:12 
+06:11:12 TASK [ws-version-info : Create log location] ***********************************
+06:11:12 task path: /home/ansible/ansible_scripts/v2.419.pr201/roles/ws-version-info/tasks/main.yml:1
+06:11:15 changed: [p120663vaps5051] => 
+06:11:15 changed: true
+06:11:15 gid: 700
+06:11:15 group: wasgroup
+06:11:15 mode: '0755'
+06:11:15 owner: wasadmin
+06:11:15 path: /mslogs/deploy-logs/1499317690
+06:11:15 size: 4096
+06:11:15 state: directory
+06:11:15 uid: 701
+06:11:15 
+06:11:15 changed: [p120663vaps2478] => 
+06:11:15 changed: true
+06:11:15 gid: 700
+06:11:15 group: wasgroup
+06:11:15 mode: '0755'
+06:11:15 owner: wasadmin
+06:11:15 path: /mslogs/deploy-logs/1499317690
+06:11:15 size: 4096
+06:11:15 state: directory
+06:11:15 uid: 701
+06:11:15 
+06:11:15 
+06:11:15 TASK [ws-version-info : List of profiles in dmgr and nodes] ********************
+06:11:16 task path: /home/ansible/ansible_scripts/v2.419.pr201/roles/ws-version-info/tasks/main.yml:7
+06:11:18 changed: [p120663vaps5051] => 
+06:11:18 changed: true
+06:11:18 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -listProfiles
+06:11:18 delta: '0:00:02.887488'
+06:11:18 end: '2017-07-06 06:15:36.546411'
+06:11:18 rc: 0
+06:11:18 start: '2017-07-06 06:15:33.658923'
+06:11:18 stderr: ''
+06:11:18 stdout: '[author_solr, DMgr, WCSNodeauthor]'
+06:11:18 stdout_lines:
+06:11:18 - '[author_solr, DMgr, WCSNodeauthor]'
+06:11:18 warnings: []
+06:11:18 
+06:11:20 changed: [p120663vaps2478] => 
+06:11:20 changed: true
+06:11:20 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -listProfiles
+06:11:20 delta: '0:00:03.290841'
+06:11:20 end: '2017-07-06 06:15:37.471332'
+06:11:20 rc: 0
+06:11:20 start: '2017-07-06 06:15:34.180491'
+06:11:20 stderr: ''
+06:11:20 stdout: '[guest_solr, WCSNodeguest, DMgr]'
+06:11:20 stdout_lines:
+06:11:20 - '[guest_solr, WCSNodeguest, DMgr]'
+06:11:20 warnings: []
+06:11:20 
+06:11:20 
+06:11:20 TASK [ws-version-info : Validate profiles registry on dmgr and nodes] **********
+06:11:20 task path: /home/ansible/ansible_scripts/v2.419.pr201/roles/ws-version-info/tasks/main.yml:13
+06:11:25 changed: [p120663vaps5051] => 
+06:11:25 changed: true
+06:11:25 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -validateRegistry
+06:11:25 delta: '0:00:02.897188'
+06:11:25 end: '2017-07-06 06:15:42.959564'
+06:11:25 rc: 0
+06:11:25 start: '2017-07-06 06:15:40.062376'
+06:11:25 stderr: ''
+06:11:25 stdout: All of the profiles in the registry are valid.
+06:11:25 stdout_lines:
+06:11:25 - All of the profiles in the registry are valid.
+06:11:25 warnings: []
+06:11:25 
+06:11:26 changed: [p120663vaps2478] => 
+06:11:26 changed: true
+06:11:26 cmd: /apps/IBM/Websphere/ws70/bin/manageprofiles.sh -validateRegistry
+06:11:26 delta: '0:00:03.045382'
+06:11:26 end: '2017-07-06 06:15:43.131516'
+06:11:26 rc: 0
+06:11:26 start: '2017-07-06 06:15:40.086134'
+06:11:26 stderr: ''
+06:11:26 stdout: All of the profiles in the registry are valid.
+06:11:26 stdout_lines:
+06:11:26 - All of the profiles in the registry are valid.
+06:11:26 warnings: []
+06:11:26 
+06:11:26 
+06:11:26 TASK [ws-version-info : Validate if the was64bit fixpacks installed] ***********
+06:11:26 task path: /home/ansible/ansible_scripts/v2.419.pr201/roles/ws-version-info/tasks/main.yml:19
+06:11:31 changed: [p120663vaps2478] => 
+06:11:31 changed: true
+06:11:31 cmd: cd /apps/IBM/Websphere/ws70/bin && ./versionInfo.sh -maintenancePackages | egrep
+06:11:31   -e Name -e Version -e Architecture -e 7.0.0-WS-WAS-LinuxX64-FP0000043 -e 7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:11:31   -e 7.0.0.43-WS-WAS-IFPI78148 -e DYNACACHE
+06:11:31 delta: '0:00:03.981033'
+06:11:31 end: '2017-07-06 06:15:49.500392'
+06:11:31 rc: 0
+06:11:31 start: '2017-07-06 06:15:45.519359'
+06:11:31 stderr: ''
+06:11:31 stdout: |-
+06:11:31   WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11
+06:11:31   Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:11:31   Name                     IBM WebSphere Application Server - ND
+06:11:31   Version                  7.0.0.43
+06:11:31   Architecture             AMD (64 bit)
+06:11:31   Name                     IBM WebSphere eXtreme Scale
+06:11:31   Version                  8.6.0.7
+06:11:31   Architecture             AMD (64 bit)
+06:11:31   Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:11:31   Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:11:31   Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:11:31   Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:11:31 stdout_lines:
+06:11:31 - 'WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11'
+06:11:31 - Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:11:31 - Name                     IBM WebSphere Application Server - ND
+06:11:31 - Version                  7.0.0.43
+06:11:31 - Architecture             AMD (64 bit)
+06:11:31 - Name                     IBM WebSphere eXtreme Scale
+06:11:31 - Version                  8.6.0.7
+06:11:31 - Architecture             AMD (64 bit)
+06:11:31 - Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:11:31 - Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:11:31 - Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:11:31 - Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:11:31 warnings: []
+06:11:31 
+06:11:32 changed: [p120663vaps5051] => 
+06:11:32 changed: true
+06:11:32 cmd: cd /apps/IBM/Websphere/ws70/bin && ./versionInfo.sh -maintenancePackages | egrep
+06:11:32   -e Name -e Version -e Architecture -e 7.0.0-WS-WAS-LinuxX64-FP0000043 -e 7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:11:32   -e 7.0.0.43-WS-WAS-IFPI78148 -e DYNACACHE
+06:11:32 delta: '0:00:03.855588'
+06:11:32 end: '2017-07-06 06:15:49.584692'
+06:11:32 rc: 0
+06:11:32 start: '2017-07-06 06:15:45.729104'
+06:11:32 stderr: ''
+06:11:32 stdout: |-
+06:11:32   WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11
+06:11:32   Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:11:32   Name                     IBM WebSphere Application Server - ND
+06:11:32   Version                  7.0.0.43
+06:11:32   Architecture             AMD (64 bit)
+06:11:32   Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:11:32   Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:11:32   Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:11:32   Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:11:32 stdout_lines:
+06:11:32 - 'WVER0012I: VersionInfo reporter version 1.15.5.1, dated 6/15/11'
+06:11:32 - Version Directory        /apps/IBM/Websphere/ws70/properties/version
+06:11:32 - Name                     IBM WebSphere Application Server - ND
+06:11:32 - Version                  7.0.0.43
+06:11:32 - Architecture             AMD (64 bit)
+06:11:32 - Maintenance Package ID   7.0.0-WS-WASSDK-LinuxX64-FP0000043
+06:11:32 - Maintenance Package ID   7.0.0-WS-WAS-LinuxX64-FP0000043
+06:11:32 - Maintenance Package ID   7.0.0.43-WS-WAS-IFPI78148
+06:11:32 - Description              SRVE0014E FROM DYNACACHE COMPONENT AFTER UPGRADING
+06:11:32 warnings: []
+06:11:32 
+06:11:32 
+06:11:32 TASK [ws-version-info : Validate if the wxs packages are installed] ************
+06:11:32 task path: /home/ansible/ansible_scripts/v2.419.pr201/roles/ws-version-info/tasks/main.yml:25
+06:11:34 fatal: [p120663vaps5051]: FAILED! => 
+06:11:34 changed: true
+06:11:34 cmd: /apps/IBM/Websphere/im/eclipse/tools/imcl listInstalledPackages -dataLocation
+06:11:34   /home/wasadmin/var/ibm/InstallationManager -features -long
+06:11:34 delta: '0:00:00.026577'
+06:11:34 end: '2017-07-06 06:15:51.452000'
+06:11:34 failed: true
+06:11:34 rc: 127
+06:11:34 start: '2017-07-06 06:15:51.425423'
+06:11:34 stderr: '/bin/sh: /apps/IBM/Websphere/im/eclipse/tools/imcl: No such file or directory'
+06:11:34 stdout: ''
+06:11:34 stdout_lines: []
+06:11:34 warnings: []
+06:11:34 
+06:11:34 ...ignoring
+06:11:38 changed: [p120663vaps2478] => 
+06:11:38 changed: true
+06:11:38 cmd: /apps/IBM/Websphere/im/eclipse/tools/imcl listInstalledPackages -dataLocation
+06:11:38   /home/wasadmin/var/ibm/InstallationManager -features -long
+06:11:38 delta: '0:00:04.996642'
+06:11:38 end: '2017-07-06 06:15:56.598505'
+06:11:38 rc: 0
+06:11:38 start: '2017-07-06 06:15:51.601863'
+06:11:38 stderr: ''
+06:11:38 stdout: |-
+06:11:38   /apps/IBM/Websphere/ws70 : com.ibm.websphere.ND.v70_7.0.43.20170324_0719 : IBM WebSphere Application Server - ND : 7.0.0.43 : consoleLanguagesSupport.feature,runtimeLanguagesSupport.feature
+06:11:38   /apps/IBM/Websphere/ws70 : com.ibm.websphere.WXSCLIENT.was7.v86_8.6.7.20150319_1407 : IBM WebSphere eXtreme Scale Client for WebSphere Application Server V7 : 8.6.0.7 : xs.console.feature
+06:11:38 stdout_lines:
+06:11:38 - '/apps/IBM/Websphere/ws70 : com.ibm.websphere.ND.v70_7.0.43.20170324_0719 : IBM
+06:11:38   WebSphere Application Server - ND : 7.0.0.43 : consoleLanguagesSupport.feature,runtimeLanguagesSupport.feature'
+06:11:38 - '/apps/IBM/Websphere/ws70 : com.ibm.websphere.WXSCLIENT.was7.v86_8.6.7.20150319_1407
+06:11:38   : IBM WebSphere eXtreme Scale Client for WebSphere Application Server V7 : 8.6.0.7
+06:11:38   : xs.console.feature'
+06:11:38 warnings: []
+06:11:38 
+06:11:38 
+06:11:38 TASK [ws-version-info : Read permission to logs] *******************************
+06:11:38 task path: /home/ansible/ansible_scripts/v2.419.pr201/roles/ws-version-info/tasks/main.yml:31
+06:11:40 changed: [p120663vaps5051] => 
+06:11:40 changed: true
+06:11:40 cmd: chmod -R 755 /mslogs/deploy-logs/1499317690
+06:11:40 delta: '0:00:00.017269'
+06:11:40 end: '2017-07-06 06:15:58.675934'
+06:11:40 rc: 0
+06:11:40 start: '2017-07-06 06:15:58.658665'
+06:11:40 stderr: ''
+06:11:40 stdout: ''
+06:11:40 stdout_lines: []
+06:11:40 warnings:
+06:11:40 - Consider using file module with mode rather than running chmod
+06:11:40 
+06:11:41 changed: [p120663vaps2478] => 
+06:11:41 changed: true
+06:11:41 cmd: chmod -R 755 /mslogs/deploy-logs/1499317690
+06:11:41 delta: '0:00:00.013088'
+06:11:41 end: '2017-07-06 06:15:59.054526'
+06:11:41 rc: 0
+06:11:41 start: '2017-07-06 06:15:59.041438'
+06:11:41 stderr: ''
+06:11:41 stdout: ''
+06:11:41 stdout_lines: []
+06:11:41 warnings:
+06:11:41 - Consider using file module with mode rather than running chmod
+06:11:41 
+06:11:41 
+06:11:41 PLAY RECAP *********************************************************************
+06:11:42 p120663vaps2366            : ok=7    changed=6    unreachable=0    failed=0   
+06:11:43 p120663vaps2367            : ok=7    changed=6    unreachable=0    failed=0   
+06:11:43 p120663vaps2377            : ok=7    changed=6    unreachable=0    failed=0   
+06:11:43 p120663vaps2478            : ok=7    changed=6    unreachable=0    failed=0   
+06:11:44 p120663vaps2479            : ok=7    changed=6    unreachable=0    failed=0   
+06:11:44 p120663vaps2480            : ok=7    changed=6    unreachable=0    failed=0   
+06:11:44 p120663vaps2481            : ok=7    changed=6    unreachable=0    failed=0   
+06:11:44 p120663vaps2482            : ok=7    changed=6    unreachable=0    failed=0   
+06:11:44 p120663vaps2483            : ok=7    changed=6    unreachable=0    failed=0   
+06:11:45 p120663vaps2484            : ok=7    changed=6    unreachable=0    failed=0   
+06:11:45 p120663vaps5051            : ok=7    changed=6    unreachable=0    failed=0   
+06:11:45 p120663vaps5081            : ok=7    changed=6    unreachable=0    failed=0   
+06:11:45 p120663vaps5082            : ok=7    changed=6    unreachable=0    failed=0   
+06:11:46 p120663vaps5091            : ok=7    changed=6    unreachable=0    failed=0   
+06:11:46 p120663vaps5092            : ok=7    changed=6    unreachable=0    failed=0   
+06:11:46 Deployment finished
+06:11:46 Unknown environment, using sitlogserver.
+06:11:47 Waiting 1s for logs to become available
+06:11:47 Logserver is sitlogserver
+06:11:48   - fetching from 'p120663vaps2366'
+06:11:49   - fetching from 'p120663vaps2367'
+06:11:49   - fetching from 'p120663vaps2478'
+06:11:50   - fetching from 'p120663vaps2479'
+06:11:51   - fetching from 'p120663vaps2483'
+06:11:51   - fetching from 'p120663vaps2482'
+06:11:52   - fetching from 'p120663vaps2481'
+06:11:52   - fetching from 'p120663vaps2480'
+06:11:53   - fetching from 'p120663vaps5091'
+06:11:54   - fetching from 'p120663vaps5051'
+06:11:54   - fetching from 'p120663vaps2377'
+06:11:55   - fetching from 'p120663vaps2484'
+06:11:55   - fetching from 'p120663vaps5092'
+06:11:56   - fetching from 'p120663vaps5082'
+06:11:57   - fetching from 'p120663vaps5081'
+06:11:57 Logs fetched
+06:11:57 Uploading logs to nexus: logs-1499317690.tar
+06:11:58 Logs: http://nexus.devops.mnscorp.net/content/repositories/deploy-packages/logs/logs/1499317690/logs-1499317690.tar
+06:11:59 Deployment SUCCESSFUL
