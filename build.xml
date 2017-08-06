@@ -1,7 +1,0 @@
-<project>
-
-  <target name="firstTarget">
-    <echo>My First Ant Project!</echo>
-  </target>
-
-</project>
